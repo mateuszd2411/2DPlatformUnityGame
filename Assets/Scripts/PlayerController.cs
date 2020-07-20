@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     private bool grounded;
 
+    private bool doubleJump;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +29,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (grounded)
+            doubleJump = false;
+
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            GetComponent<Rigidbody2D>().velocity =
-                new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+            Jump();
+        }
+
+        //for double jump
+        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && !grounded)
+        {
+            Jump();
+            doubleJump = true;
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -44,5 +55,11 @@ public class PlayerController : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity =
                 new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
+    }//void Update() END
+
+    public void Jump()
+    {
+        GetComponent<Rigidbody2D>().velocity =
+                new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
     }
 }
