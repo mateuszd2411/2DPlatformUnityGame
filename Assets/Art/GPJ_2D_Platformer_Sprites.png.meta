@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4036584236108592218
-    second: GPJ_2D_Platformer_Sprites_0
+    second: Spikes
   - first:
       213: 4645372706175723018
     second: Player
@@ -133,6 +133,27 @@ TextureImporter:
       bones: []
       spriteID: 23e9134141d45c270800000000000000
       internalID: 8270101039369264690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikes
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab4ec4260c2bf7c0800000000000000
+      internalID: -4036584236108592218
       vertices: []
       indices: 
       edges: []
