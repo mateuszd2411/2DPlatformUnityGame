@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
-
     public LevelManager levelManager;
 
     // Start is called before the first frame update
