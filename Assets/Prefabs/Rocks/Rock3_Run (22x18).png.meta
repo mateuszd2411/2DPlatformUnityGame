@@ -1,51 +1,51 @@
 fileFormatVersion: 2
-guid: 341181c8b3919d64b850c988c806bd91
+guid: 6fb78d296f546aa4680350fd6e8e3315
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4243741462996495119
-    second: Rock2_Run (32x28)_0
+      213: 6354333384484250381
+    second: Rock3_Run (22x18)_0
   - first:
-      213: 9016932863708838467
-    second: Rock2_Run (32x28)_1
+      213: 3233581472169175858
+    second: Rock3_Run (22x18)_1
   - first:
-      213: 4031765010434451189
-    second: Rock2_Run (32x28)_2
+      213: 156551205295483927
+    second: Rock3_Run (22x18)_2
   - first:
-      213: -7662325065483771763
-    second: Rock2_Run (32x28)_3
+      213: 8404583310960239263
+    second: Rock3_Run (22x18)_3
   - first:
-      213: -3881371739765264676
-    second: Rock2_Run (32x28)_4
+      213: 8780704488100075554
+    second: Rock3_Run (22x18)_4
   - first:
-      213: -2402131140999567694
-    second: Rock2_Run (32x28)_5
+      213: -6461010678354733256
+    second: Rock3_Run (22x18)_5
   - first:
-      213: -239047365011775978
-    second: Rock2_Run (32x28)_6
+      213: 4487241361774796837
+    second: Rock3_Run (22x18)_6
   - first:
-      213: 6175613209864557959
-    second: Rock2_Run (32x28)_7
+      213: -7569066178548607241
+    second: Rock3_Run (22x18)_7
   - first:
-      213: -5285559993425611679
-    second: Rock2_Run (32x28)_8
+      213: 7405971587541902691
+    second: Rock3_Run (22x18)_8
   - first:
-      213: 5696246588668737563
-    second: Rock2_Run (32x28)_9
+      213: -4962800462768598470
+    second: Rock3_Run (22x18)_9
   - first:
-      213: 4356848656896060108
-    second: Rock2_Run (32x28)_10
+      213: 1700788416593634327
+    second: Rock3_Run (22x18)_10
   - first:
-      213: 985846852170845572
-    second: Rock2_Run (32x28)_11
+      213: -7509075713965042091
+    second: Rock3_Run (22x18)_11
   - first:
-      213: -8666900771798489472
-    second: Rock2_Run (32x28)_12
+      213: -5288751839408917917
+    second: Rock3_Run (22x18)_12
   - first:
-      213: -1718279605023553000
-    second: Rock2_Run (32x28)_13
+      213: -1951993323450205119
+    second: Rock3_Run (22x18)_13
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -99,6 +99,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -128,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_0
+      name: Rock3_Run (22x18)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 960c75ff7faf9774aae4fe38c1cc3c5d
-      internalID: 4243741462996495119
+      spriteID: 8a7cc6ac42294a8428963ca04819611a
+      internalID: 6354333384484250381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_1
+      name: Rock3_Run (22x18)_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 22
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b32cdd5f0b5066a4cbc032b401a9edb4
-      internalID: 9016932863708838467
+      spriteID: 02f9c3112ddbd814caa282a0da859429
+      internalID: 3233581472169175858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_2
+      name: Rock3_Run (22x18)_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 44
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf3ab5dffab00194084b8e6074588b76
-      internalID: 4031765010434451189
+      spriteID: 495f0d8205fca4e478dc7a190aa30333
+      internalID: 156551205295483927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_3
+      name: Rock3_Run (22x18)_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 66
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c9424c3af3db84c80ce06f5710affe
-      internalID: -7662325065483771763
+      spriteID: 10bcfd4b909548640ba1b65f8ebb31e6
+      internalID: 8404583310960239263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_4
+      name: Rock3_Run (22x18)_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 88
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac3a345ae8d0a01458d6e8115fb46226
-      internalID: -3881371739765264676
+      spriteID: bd3c41c10230c904caefdf25580c96a0
+      internalID: 8780704488100075554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_5
+      name: Rock3_Run (22x18)_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 110
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ffc1aa2597cba4c82edc87db2e618d
-      internalID: -2402131140999567694
+      spriteID: 56ed3622891aec94691cb6067be4c3cb
+      internalID: -6461010678354733256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_6
+      name: Rock3_Run (22x18)_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 132
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c5ad85abdcda442849485d9ea9498c
-      internalID: -239047365011775978
+      spriteID: 6e1284d0f64a9fd4cb790dd539fa430f
+      internalID: 4487241361774796837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_7
+      name: Rock3_Run (22x18)_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 154
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d03de57f99f726c4c864c28f5558b422
-      internalID: 6175613209864557959
+      spriteID: e5cce0849c7f17147a4ac66efbdab68e
+      internalID: -7569066178548607241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_8
+      name: Rock3_Run (22x18)_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 176
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcbd3c446b43d784789c3337ef70c6d2
-      internalID: -5285559993425611679
+      spriteID: 1c47d3e3dbede494d90d1e8363eb2eca
+      internalID: 7405971587541902691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_9
+      name: Rock3_Run (22x18)_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 198
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffa15993cb7f3244e96c6db0615c7deb
-      internalID: 5696246588668737563
+      spriteID: 19cb073af669a514fa6cd460628a5a70
+      internalID: -4962800462768598470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_10
+      name: Rock3_Run (22x18)_10
       rect:
         serializedVersion: 2
-        x: 320
+        x: 220
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,20 +353,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd9c5b31a3c17bc40bf96ec288002601
-      internalID: 4356848656896060108
+      spriteID: 28ef4d4498693f74f8ba90df8ea2e6ce
+      internalID: 1700788416593634327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_11
+      name: Rock3_Run (22x18)_11
       rect:
         serializedVersion: 2
-        x: 352
+        x: 242
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,20 +374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91bfaa4af4304db4e9dc766bd33fae67
-      internalID: 985846852170845572
+      spriteID: eda1107db9c64aa44aa27d3a6c750ba3
+      internalID: -7509075713965042091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_12
+      name: Rock3_Run (22x18)_12
       rect:
         serializedVersion: 2
-        x: 384
+        x: 264
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,20 +395,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15d677957842790459020148b8b477d9
-      internalID: -8666900771798489472
+      spriteID: 21df6ae2d117c504a851889842167692
+      internalID: -5288751839408917917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock2_Run (32x28)_13
+      name: Rock3_Run (22x18)_13
       rect:
         serializedVersion: 2
-        x: 416
+        x: 286
         y: 0
-        width: 32
-        height: 28
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 393945c0840e9a845afa31cd4e257137
-      internalID: -1718279605023553000
+      spriteID: f15afb25e2afdd94fbe5eebfea743261
+      internalID: -1951993323450205119
       vertices: []
       indices: 
       edges: []

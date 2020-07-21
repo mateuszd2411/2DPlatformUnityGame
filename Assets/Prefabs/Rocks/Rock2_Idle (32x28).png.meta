@@ -1,42 +1,48 @@
 fileFormatVersion: 2
-guid: 061e846bd4a5ba449bf75b630b1a7dcb
+guid: f7ea70eedecbfe34a93819309bcaf901
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3229457778085692756
-    second: Rock3_Idle (22x18)_0
+      213: 2775701068622945926
+    second: Rock2_Idle (32x28)_0
   - first:
-      213: 5136482837552182320
-    second: Rock3_Idle (22x18)_1
+      213: -2603007465218576700
+    second: Rock2_Idle (32x28)_1
   - first:
-      213: 775267108397615911
-    second: Rock3_Idle (22x18)_2
+      213: 7205351857023529823
+    second: Rock2_Idle (32x28)_2
   - first:
-      213: -2540834244640836001
-    second: Rock3_Idle (22x18)_3
+      213: -6148594694035848250
+    second: Rock2_Idle (32x28)_3
   - first:
-      213: -793542914524124555
-    second: Rock3_Idle (22x18)_4
+      213: 5903342228953101057
+    second: Rock2_Idle (32x28)_4
   - first:
-      213: 7206049330171941342
-    second: Rock3_Idle (22x18)_5
+      213: -335060181912154922
+    second: Rock2_Idle (32x28)_5
   - first:
-      213: 7774065530295971774
-    second: Rock3_Idle (22x18)_6
+      213: 4705623423857545985
+    second: Rock2_Idle (32x28)_6
   - first:
-      213: 6535167453613699265
-    second: Rock3_Idle (22x18)_7
+      213: -5088294295630748744
+    second: Rock2_Idle (32x28)_7
   - first:
-      213: 7486005739768291022
-    second: Rock3_Idle (22x18)_8
+      213: -8342472925880523053
+    second: Rock2_Idle (32x28)_8
   - first:
-      213: -2811160913915120480
-    second: Rock3_Idle (22x18)_9
+      213: 1402148618241145540
+    second: Rock2_Idle (32x28)_9
   - first:
-      213: 7813634406231609325
-    second: Rock3_Idle (22x18)_10
+      213: 338621829386500074
+    second: Rock2_Idle (32x28)_10
+  - first:
+      213: -2263471757442629421
+    second: Rock2_Idle (32x28)_11
+  - first:
+      213: 6747327868054909629
+    second: Rock2_Idle (32x28)_12
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -90,6 +96,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -119,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_0
+      name: Rock2_Idle (32x28)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3adfb951a26490c4489991628b1a2e81
-      internalID: -3229457778085692756
+      spriteID: cfa7fe71d8b916d4c83d00cd1be488f9
+      internalID: 2775701068622945926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_1
+      name: Rock2_Idle (32x28)_1
       rect:
         serializedVersion: 2
-        x: 22
+        x: 32
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc157e77af2d864399ed34557b090b9
-      internalID: 5136482837552182320
+      spriteID: 616b3cf987dfed54db14a8368f17db3e
+      internalID: -2603007465218576700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_2
+      name: Rock2_Idle (32x28)_2
       rect:
         serializedVersion: 2
-        x: 44
+        x: 64
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7953895faf77e04a89817455575333b
-      internalID: 775267108397615911
+      spriteID: 8c7df8373777c154faa1bd50d4102b47
+      internalID: 7205351857023529823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_3
+      name: Rock2_Idle (32x28)_3
       rect:
         serializedVersion: 2
-        x: 66
+        x: 96
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5dd1a62cac2bab4b8701637b4042d53
-      internalID: -2540834244640836001
+      spriteID: b913d4f89135d9e4b8a9751ef4e45698
+      internalID: -6148594694035848250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_4
+      name: Rock2_Idle (32x28)_4
       rect:
         serializedVersion: 2
-        x: 88
+        x: 128
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9d346f44372474ba3296580c88e0ef
-      internalID: -793542914524124555
+      spriteID: 92c2323985d6bef40a8838a6d6ae531e
+      internalID: 5903342228953101057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_5
+      name: Rock2_Idle (32x28)_5
       rect:
         serializedVersion: 2
-        x: 110
+        x: 160
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6457ebb25506b21478e26ba0d3f9841f
-      internalID: 7206049330171941342
+      spriteID: ff5df4708cf3209448c65566f9acf198
+      internalID: -335060181912154922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_6
+      name: Rock2_Idle (32x28)_6
       rect:
         serializedVersion: 2
-        x: 132
+        x: 192
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06569779eb2036e48b4bd1d00c809c1d
-      internalID: 7774065530295971774
+      spriteID: 0743a9357cb9b7c4e902690475f98ff2
+      internalID: 4705623423857545985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_7
+      name: Rock2_Idle (32x28)_7
       rect:
         serializedVersion: 2
-        x: 154
+        x: 224
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bf6e575c19f844f94f680c11337e29
-      internalID: 6535167453613699265
+      spriteID: 3e1b6660fc2b50845ae4bb0336425630
+      internalID: -5088294295630748744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_8
+      name: Rock2_Idle (32x28)_8
       rect:
         serializedVersion: 2
-        x: 176
+        x: 256
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9a7ec0396f8614eb39a13429752698
-      internalID: 7486005739768291022
+      spriteID: 6cfb0661a9160074a9fb82480610eb53
+      internalID: -8342472925880523053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_9
+      name: Rock2_Idle (32x28)_9
       rect:
         serializedVersion: 2
-        x: 198
+        x: 288
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 208d601438fa148419825173c3c41c67
-      internalID: -2811160913915120480
+      spriteID: 6cf47dff56d1ba24b97a356fc88e4dab
+      internalID: 1402148618241145540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rock3_Idle (22x18)_10
+      name: Rock2_Idle (32x28)_10
       rect:
         serializedVersion: 2
-        x: 220
+        x: 320
         y: 0
-        width: 22
-        height: 18
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,8 +350,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7f0ab02c71643439058a6daf935df1
-      internalID: 7813634406231609325
+      spriteID: a763695a8a60ad5488b20118f5cfd401
+      internalID: 338621829386500074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d7fedbe24b6ab4e9e6347173b31de5
+      internalID: -2263471757442629421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock2_Idle (32x28)_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc21de13b3ed7d4c95d2639d5553c79
+      internalID: 6747327868054909629
       vertices: []
       indices: 
       edges: []
