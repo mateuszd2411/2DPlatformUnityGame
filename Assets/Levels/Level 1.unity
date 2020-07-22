@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279482785}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: -1.44, z: 0}
+  m_LocalPosition: {x: 0.007, y: -1.452, z: 0}
   m_LocalScale: {x: -0.33866152, y: 0.33689883, z: 0.33689883}
   m_Children: []
   m_Father: {fileID: 481744047}
@@ -455,7 +455,7 @@ MonoBehaviour:
   groundCheckRadious: 0.1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
 --- !u!50 &481744044
 Rigidbody2D:
   serializedVersion: 4
@@ -614,7 +614,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.41509432, g: 0.30653062, b: 0.009789959, a: 1}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -627,11 +627,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.3
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -655,8 +655,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535559641}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.006, y: 0.22235322, z: 0}
-  m_LocalScale: {x: -0.33866152, y: 0.33689883, z: 0.33689883}
+  m_LocalPosition: {x: 0.006, y: 0.22235322, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 481744047}
   m_RootOrder: 0
