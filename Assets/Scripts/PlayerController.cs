@@ -15,10 +15,12 @@ public class PlayerController : MonoBehaviour
 
     private bool doubleJump;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -55,6 +57,8 @@ public class PlayerController : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity =
                 new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
         }
+
+        anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
     }//void Update() END
 
     public void Jump()
