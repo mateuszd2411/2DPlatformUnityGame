@@ -16,6 +16,8 @@ public class LevelManager : MonoBehaviour
 
     public float respawnDelay;
 
+    private float gravityStore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,10 @@ public class LevelManager : MonoBehaviour
         //after dead don't move
         player.enabled = false;
         player.gameObject.GetComponent<Renderer>().enabled = false;
+
+        //player gravity
+        gravityStore = player.gameObject.GetComponent<Rigidbody2D>().gravityScale;
+        player.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
         //stop camera after player dead
         player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
@@ -51,6 +57,8 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Player Respawn");
 
         yield return new WaitForSecondsRealtime(respawnDelay);
+        //return to previous gravity
+        player.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityStore; ;
 
         player.transform.position = currentCheckpoit.transform.position;
 
