@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,11 @@ public class LevelManager : MonoBehaviour
     public GameObject currentCheckpoit;
 
     private PlayerController player;
+
+    public GameObject deathPaticle;
+    public GameObject respawnPaticle;
+
+    public float respawnDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +28,33 @@ public class LevelManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-        Debug.Log("Player Respawn");
-        player.transform.position = currentCheckpoit.transform.position;
+        StartCoroutine("RespawnPlayerCo");
     }
 
+    //wait fo respawn to diplay death particle
+    public IEnumerator RespawnPlayerCo()
+    {
+        //paritcle
+        Instantiate(deathPaticle, player.transform.position, player.transform.rotation);
+
+        //after dead don't move
+        player.enabled = false;
+        player.gameObject.GetComponent<Renderer>().enabled = false;
+
+        Debug.Log("Player Respawn");
+
+        yield return new WaitForSecondsRealtime(respawnDelay);
+
+        player.transform.position = currentCheckpoit.transform.position;
+
+        //after dead don't move
+        player.enabled = true;
+        player.gameObject.GetComponent<Renderer>().enabled = true;
+
+
+        //paritcle
+        Instantiate(respawnPaticle, currentCheckpoit.transform.position, currentCheckpoit.transform.rotation);
+
+    }
 
 }
