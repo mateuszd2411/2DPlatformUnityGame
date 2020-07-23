@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
+    public Transform firePoint;
+    public GameObject bullet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +79,14 @@ public class PlayerController : MonoBehaviour
 
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
             transform.localScale = new Vector3(-1f, 1f, 1f);
+
+        //bullet fire
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
+        }
+
+
     }//void Update() END
 
     public void Jump()
