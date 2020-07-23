@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed;
+    private float moveVelocity;
     public float jumpHeight;
 
     public Transform groundCheck;
@@ -48,17 +49,25 @@ public class PlayerController : MonoBehaviour
             doubleJump = true;
         }
 
+        moveVelocity = 0f;
+
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity =
-                new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity =
+            //  new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+            moveVelocity = moveSpeed;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().velocity =
-                new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            // GetComponent<Rigidbody2D>().velocity =
+            //   new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+            moveVelocity = -moveSpeed;
         }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 

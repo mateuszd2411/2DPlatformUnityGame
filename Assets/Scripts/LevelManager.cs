@@ -40,6 +40,8 @@ public class LevelManager : MonoBehaviour
         //after dead don't move
         player.enabled = false;
         player.gameObject.GetComponent<Renderer>().enabled = false;
+        //stop camera after player dead
+        player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         Debug.Log("Player Respawn");
 
