@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     public GameObject deathPaticle;
     public GameObject respawnPaticle;
 
+    public int pointPenaltyOnDeath;
+
     public float respawnDelay;
 
     // Start is called before the first frame update
@@ -42,6 +44,9 @@ public class LevelManager : MonoBehaviour
         player.gameObject.GetComponent<Renderer>().enabled = false;
         //stop camera after player dead
         player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+        // Penalty points after dead
+        ScoreManager.AddPoints(-pointPenaltyOnDeath);
 
         Debug.Log("Player Respawn");
 
