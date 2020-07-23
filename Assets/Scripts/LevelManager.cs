@@ -16,12 +16,16 @@ public class LevelManager : MonoBehaviour
 
     public float respawnDelay;
 
+    private CameraController camera;
+
     private float gravityStore;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
+
+        camera = FindObjectOfType<CameraController>();
     }
 
     // Update is called once per frame
@@ -45,11 +49,9 @@ public class LevelManager : MonoBehaviour
         player.enabled = false;
         player.gameObject.GetComponent<Renderer>().enabled = false;
 
-        //player gravity
-        gravityStore = player.gameObject.GetComponent<Rigidbody2D>().gravityScale;
-        player.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0f;
-        //stop camera after player dead
-        player.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        //camera
+        camera.isFollowing = false;
+        
 
         // Penalty points after dead
         ScoreManager.AddPoints(-pointPenaltyOnDeath);
@@ -57,8 +59,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Player Respawn");
 
         yield return new WaitForSecondsRealtime(respawnDelay);
-        //return to previous gravity
-        player.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityStore; ;
+       
 
         player.transform.position = currentCheckpoit.transform.position;
 
@@ -66,6 +67,8 @@ public class LevelManager : MonoBehaviour
         player.enabled = true;
         player.gameObject.GetComponent<Renderer>().enabled = true;
 
+        //camera
+        camera.isFollowing = true;
 
         //paritcle
         Instantiate(respawnPaticle, currentCheckpoit.transform.position, currentCheckpoit.transform.rotation);
