@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
+    public float shotDelay;
+    private float shotDelayCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,6 +87,18 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             Instantiate(bullet, firePoint.position, firePoint.rotation);
+            shotDelayCount = shotDelay;
+        }
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            shotDelayCount -= Time.deltaTime;
+
+            if(shotDelayCount <= 0)
+            {
+                shotDelayCount = shotDelay;
+                Instantiate(bullet, firePoint.position, firePoint.rotation);
+            }
         }
 
 

@@ -7760,6 +7760,7 @@ MonoBehaviour:
     m_Bits: 512
   firePoint: {fileID: 365597842}
   bullet: {fileID: 1376215335630455065, guid: 1252da894f4d5914eb497c8d2baf700c, type: 3}
+  shotDelay: 0.2
 --- !u!50 &481744044
 Rigidbody2D:
   serializedVersion: 4
