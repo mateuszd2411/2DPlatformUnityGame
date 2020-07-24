@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 1806136995961738443}
   - component: {fileID: 1806136995961738445}
   - component: {fileID: 1806136995961738442}
-  - component: {fileID: 1806136995961738446}
   - component: {fileID: 1881588165196673559}
+  - component: {fileID: 5846576698952750255}
   m_Layer: 0
   m_Name: Bull run
   m_TagString: Enemy
@@ -299,19 +299,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1536
   edgeCheck: {fileID: 470396481}
---- !u!114 &1806136995961738446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5032579443108782003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23401f524800dd74cb79334f6050da24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
 --- !u!114 &1881588165196673559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,3 +315,16 @@ MonoBehaviour:
   deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
     type: 3}
   pointsOnDeath: 500
+--- !u!114 &5846576698952750255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032579443108782003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9873d291d5ffe8f41bc7fbd2439847b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 3

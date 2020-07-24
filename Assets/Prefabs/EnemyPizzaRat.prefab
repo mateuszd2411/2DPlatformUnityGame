@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 866010366}
   - component: {fileID: 866010368}
   - component: {fileID: 866010364}
-  - component: {fileID: 866010365}
   - component: {fileID: 6711113875434641354}
+  - component: {fileID: 5809947182295272858}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -299,19 +299,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1536
   edgeCheck: {fileID: 155366562}
---- !u!114 &866010365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2158252277315804307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23401f524800dd74cb79334f6050da24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
 --- !u!114 &6711113875434641354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,3 +315,16 @@ MonoBehaviour:
   deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
     type: 3}
   pointsOnDeath: 500
+--- !u!114 &5809947182295272858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2158252277315804307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9873d291d5ffe8f41bc7fbd2439847b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
