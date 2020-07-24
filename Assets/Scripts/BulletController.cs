@@ -12,6 +12,8 @@ public class BulletController : MonoBehaviour
 
     public GameObject impactEffect;
 
+    public int pointsForKill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,8 @@ public class BulletController : MonoBehaviour
         {
             Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
+            //add points for kill enemy
+            ScoreManager.AddPoints(pointsForKill);
         }
 
         Instantiate(impactEffect, transform.position, transform.rotation);

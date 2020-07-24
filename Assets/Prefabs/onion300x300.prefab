@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1584229628}
   - component: {fileID: 1584229630}
   - component: {fileID: 1584229629}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4769,7 +4769,7 @@ GameObject:
   - component: {fileID: 4427210818677659296}
   - component: {fileID: 1109333914955437552}
   - component: {fileID: 5447404614595114791}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: onion300x300
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4930,3 +4930,4 @@ MonoBehaviour:
     type: 3}
   impactEffect: {fileID: 2269346566748729513, guid: 1bfb5412f2badf04ebc1c855ab4a2e26,
     type: 3}
+  pointsForKill: 399
