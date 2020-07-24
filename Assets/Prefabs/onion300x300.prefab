@@ -4769,6 +4769,7 @@ GameObject:
   - component: {fileID: 4427210818677659296}
   - component: {fileID: 1109333914955437552}
   - component: {fileID: 5447404614595114791}
+  - component: {fileID: 2297797225387024204}
   m_Layer: 11
   m_Name: onion300x300
   m_TagString: Untagged
@@ -4933,3 +4934,16 @@ MonoBehaviour:
   pointsForKill: 399
   rotationSpeed: -180
   damageToGive: 1
+--- !u!114 &2297797225387024204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376215335630455065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4f1ba5a89682245acc0271505b2c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 2
