@@ -8,6 +8,10 @@ public class BulletController : MonoBehaviour
 
     public PlayerController player;
 
+    public GameObject enemyDeathEffect;
+
+    public GameObject impactEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,14 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+        if(other.tag == "Enemy")
+        {
+            Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
+            Destroy(other.gameObject);
+        }
+
+        Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }
