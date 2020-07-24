@@ -14,19 +14,26 @@ public class BulletController : MonoBehaviour
 
     public int pointsForKill;
 
+    public float rotationSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
 
         if (player.transform.localScale.x < 0)
+        {
             speed = -speed;
+            rotationSpeed = -rotationSpeed;
+        }
+           
     }
 
     // Update is called once per frame
     void Update()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
+        GetComponent<Rigidbody2D>().angularVelocity = rotationSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
