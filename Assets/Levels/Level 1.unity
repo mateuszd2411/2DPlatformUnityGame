@@ -16439,10 +16439,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bull (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5032579443108782003, guid: 46a2137b769ea454798bdec3a16d07eb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a2137b769ea454798bdec3a16d07eb, type: 3}

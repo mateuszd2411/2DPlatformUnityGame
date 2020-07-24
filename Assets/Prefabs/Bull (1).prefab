@@ -108,9 +108,10 @@ GameObject:
   - component: {fileID: 1806136995961738445}
   - component: {fileID: 1806136995961738442}
   - component: {fileID: 1806136995961738446}
+  - component: {fileID: 1881588165196673559}
   m_Layer: 0
   m_Name: Bull run
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,3 +312,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
+--- !u!114 &1881588165196673559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032579443108782003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e522f7cb7ca9ba489e18c8aad21a8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 4
+  deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
+    type: 3}
+  pointsOnDeath: 500

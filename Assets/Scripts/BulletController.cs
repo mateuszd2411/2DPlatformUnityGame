@@ -16,6 +16,8 @@ public class BulletController : MonoBehaviour
 
     public float rotationSpeed;
 
+    public int damageToGive;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,10 +43,13 @@ public class BulletController : MonoBehaviour
 
         if(other.tag == "Enemy")
         {
-            Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
-            Destroy(other.gameObject);
+            //Instantiate(enemyDeathEffect, other.transform.position, other.transform.rotation);
+            //Destroy(other.gameObject);
             //add points for kill enemy
-            ScoreManager.AddPoints(pointsForKill);
+            //ScoreManager.AddPoints(pointsForKill);
+
+            //hit enemy rat 3 times bull 4 times by onion etc
+            other.GetComponent<EnemyHealthManager>().giveDamage(damageToGive);
         }
 
         Instantiate(impactEffect, transform.position, transform.rotation);
