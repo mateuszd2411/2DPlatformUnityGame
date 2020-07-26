@@ -6066,7 +6066,7 @@ PrefabInstance:
     - target: {fileID: 2158252276159905858, guid: dc1ca3e28323894469d333781f5e5948,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.56
+      value: 7.49
       objectReference: {fileID: 0}
     - target: {fileID: 2158252276159905858, guid: dc1ca3e28323894469d333781f5e5948,
         type: 3}
@@ -6117,6 +6117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyPizzaRat (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2158252277315804303, guid: dc1ca3e28323894469d333781f5e5948,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -25.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc1ca3e28323894469d333781f5e5948, type: 3}
@@ -7810,6 +7815,7 @@ GameObject:
   - component: {fileID: 481744044}
   - component: {fileID: 481744043}
   - component: {fileID: 481744048}
+  - component: {fileID: 481744049}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -7961,6 +7967,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &481744049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481744042}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13970995, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.27942, y: 3}
+  m_EdgeRadius: 0
 --- !u!4 &486759642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3106339414974831607, guid: cf4d14c1efe3c4147a76b2bfc5358fbc,

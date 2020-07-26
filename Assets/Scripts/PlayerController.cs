@@ -101,6 +101,18 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //defend
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            anim.SetBool("Defend", true);
+            GetComponent<BoxCollider2D>().isTrigger = false;
+        }
+        if(Input.GetKeyUp(KeyCode.Q))
+        {
+            anim.SetBool("Defend", false);
+            GetComponent<BoxCollider2D>().isTrigger = true;
+        }
+
 
     }//void Update() END
 
