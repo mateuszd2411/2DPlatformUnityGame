@@ -86,11 +86,17 @@ public class PlayerController : MonoBehaviour
         //bullet fire
         if(Input.GetKeyDown(KeyCode.E))
         {
+            anim.SetBool("OnionBombo", true);
             Instantiate(bullet, firePoint.position, firePoint.rotation);
             shotDelayCount = shotDelay;
         }
 
-        if(Input.GetKey(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            anim.SetBool("OnionBombo", false);
+        }
+
+            if (Input.GetKey(KeyCode.E))
         {
             shotDelayCount -= Time.deltaTime;
 
