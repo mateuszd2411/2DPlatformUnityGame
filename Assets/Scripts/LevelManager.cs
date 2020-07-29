@@ -71,6 +71,7 @@ public class LevelManager : MonoBehaviour
         GetComponent<AudioSource>().Play();
 
         player.transform.position = currentCheckpoit.transform.position;
+        player.knockbackCount = 0;
 
         //after dead don't move
         player.enabled = true;
