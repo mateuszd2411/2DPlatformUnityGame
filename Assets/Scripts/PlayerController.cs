@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private float moveVelocity;
     public float jumpHeight;
 
+    private Rigidbody2D myRigidbody2D;
+
     public Transform groundCheck;
     public float groundCheckRadious;
     public LayerMask whatIsGround;
@@ -23,6 +25,11 @@ public class PlayerController : MonoBehaviour
 
     public float shotDelay;
     private float shotDelayCount;
+
+    public float knockback;
+    public float knockbackLenght;
+    public float knockbackCount; 
+    public bool knockFromRight;
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +80,20 @@ public class PlayerController : MonoBehaviour
             moveVelocity = -moveSpeed;
         }
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+
+        if(knockbackCount <= 0)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+        }
+        else
+        {
+            if (knockFromRight)
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-knockback, knockback);
+            if(!knockFromRight)
+                GetComponent<Rigidbody2D>().velocity = new Vector2(knockback, knockback);
+            knockbackCount -= Time.deltaTime;
+        }
+        
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
