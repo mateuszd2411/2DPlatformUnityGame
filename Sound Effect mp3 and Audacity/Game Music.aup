@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Game Music_data" version="1.3.0" audacityversion="2.3.0" sel0="44.9362684548" sel1="44.9362684548" vpos="0" h="27.9767534694" zoom="34.6615897038" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="TITLE" value="Karaoke - Strutter"/>
+		<tag name="compatible_brands" value="isommp42"/>
+		<tag name="ARTIST" value="Karaoke - Kiss"/>
+		<tag name="major_brand" value="mp42"/>
+		<tag name="Software" value="Lavf56.19.100"/>
+		<tag name="minor_version" value="0"/>
+	</tags>
+	<wavetrack name="Karaoke Kiss  Strutter" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2003682">
+				<waveblock start="0">
+					<simpleblockfile filename="e08081c9.au" len="157865" min="-0.977479" max="1.000674" rms="0.195353"/>
+				</waveblock>
+				<waveblock start="157865">
+					<simpleblockfile filename="e0808ae5.au" len="262144" min="-0.973024" max="0.973074" rms="0.212831"/>
+				</waveblock>
+				<waveblock start="420009">
+					<simpleblockfile filename="e08082a4.au" len="262144" min="-0.939444" max="0.920083" rms="0.199934"/>
+				</waveblock>
+				<waveblock start="682153">
+					<simpleblockfile filename="e0808a20.au" len="262144" min="-0.98004" max="0.944516" rms="0.203744"/>
+				</waveblock>
+				<waveblock start="944297">
+					<simpleblockfile filename="e080801f.au" len="262144" min="-0.921466" max="0.970039" rms="0.199955"/>
+				</waveblock>
+				<waveblock start="1206441">
+					<simpleblockfile filename="e080872e.au" len="262144" min="-0.949344" max="0.984845" rms="0.197359"/>
+				</waveblock>
+				<waveblock start="1468585">
+					<simpleblockfile filename="e0808453.au" len="262144" min="-0.997929" max="0.965524" rms="0.193676"/>
+				</waveblock>
+				<waveblock start="1730729">
+					<simpleblockfile filename="e0808c46.au" len="136476" min="-0.917938" max="1.019163" rms="0.199817"/>
+				</waveblock>
+				<waveblock start="1867205">
+					<simpleblockfile filename="e08084a4.au" len="136477" min="-1.00572" max="1.023613" rms="0.217314"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Karaoke Kiss  Strutter" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2003682">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a81.au" len="157865" min="-0.967015" max="1.010686" rms="0.187052"/>
+				</waveblock>
+				<waveblock start="157865">
+					<simpleblockfile filename="e080816a.au" len="262144" min="-0.933564" max="0.963911" rms="0.200016"/>
+				</waveblock>
+				<waveblock start="420009">
+					<simpleblockfile filename="e080888f.au" len="262144" min="-0.97257" max="0.944361" rms="0.189751"/>
+				</waveblock>
+				<waveblock start="682153">
+					<simpleblockfile filename="e080831e.au" len="262144" min="-0.968468" max="0.932835" rms="0.176219"/>
+				</waveblock>
+				<waveblock start="944297">
+					<simpleblockfile filename="e0808600.au" len="262144" min="-0.965399" max="1.016471" rms="0.173355"/>
+				</waveblock>
+				<waveblock start="1206441">
+					<simpleblockfile filename="e08086b7.au" len="262144" min="-0.894891" max="0.989486" rms="0.171818"/>
+				</waveblock>
+				<waveblock start="1468585">
+					<simpleblockfile filename="e0808e91.au" len="262144" min="-0.956772" max="0.971079" rms="0.165509"/>
+				</waveblock>
+				<waveblock start="1730729">
+					<simpleblockfile filename="e080867f.au" len="136476" min="-0.881352" max="0.978341" rms="0.165695"/>
+				</waveblock>
+				<waveblock start="1867205">
+					<simpleblockfile filename="e0808995.au" len="136477" min="-0.980638" max="0.951769" rms="0.18396"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
