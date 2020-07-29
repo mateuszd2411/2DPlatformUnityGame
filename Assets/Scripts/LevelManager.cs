@@ -46,6 +46,9 @@ public class LevelManager : MonoBehaviour
     //wait fo respawn to diplay death particle
     public IEnumerator RespawnPlayerCo()
     {
+        //Stop background music
+        GetComponent<AudioSource>().Stop();
+
         //paritcle
         Instantiate(deathPaticle, player.transform.position, player.transform.rotation);
 
@@ -63,7 +66,9 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Player Respawn");
 
         yield return new WaitForSecondsRealtime(respawnDelay);
-       
+
+        //Start background music
+        GetComponent<AudioSource>().Play();
 
         player.transform.position = currentCheckpoit.transform.position;
 
