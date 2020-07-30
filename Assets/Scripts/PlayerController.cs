@@ -139,7 +139,6 @@ public class PlayerController : MonoBehaviour
             GetComponent<BoxCollider2D>().isTrigger = true;
         }
 
-
     }//void Update() END
 
     public void Jump()
