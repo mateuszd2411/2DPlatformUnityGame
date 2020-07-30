@@ -15,6 +15,10 @@ public class LifeManager : MonoBehaviour
 
     public PlayerController player;
 
+    public string mainMenu;
+
+    public float waitAfterGameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +26,7 @@ public class LifeManager : MonoBehaviour
 
         lifeCounter = startingLives;
 
-        //player = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<PlayerController>();
 
         //player.gameObject.SetActive(false);
     }
@@ -30,12 +34,24 @@ public class LifeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(lifeCounter < 0)
+        if (lifeCounter <= 0)
         {
             gameOverScreen.SetActive(true);
-        }*/
+            player.gameObject.SetActive(false);
+        }
 
         theText.text = "x" + lifeCounter;
+
+        if(gameOverScreen.activeSelf)
+        {
+            waitAfterGameOver -= Time.deltaTime;
+        }
+
+        if(waitAfterGameOver < 0)
+        {
+            Application.LoadLevel(mainMenu);
+        }
+
     }
 
     public void GiveLife()
