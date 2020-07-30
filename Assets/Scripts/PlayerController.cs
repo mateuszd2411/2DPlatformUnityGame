@@ -50,36 +50,21 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("Grounded", grounded);
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             Jump();
         }
 
         //for double jump
-        if (Input.GetKeyDown(KeyCode.Space) && !doubleJump && !grounded)
+        if (Input.GetButtonDown("Jump") && !doubleJump && !grounded)
         {
             Jump();
             doubleJump = true;
         }
 
-        moveVelocity = 0f;
+        //moveVelocity = 0f;
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            //GetComponent<Rigidbody2D>().velocity =
-            //  new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
-            moveVelocity = moveSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            // GetComponent<Rigidbody2D>().velocity =
-            //   new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
-            moveVelocity = -moveSpeed;
-        }
-
+        moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
 
         if(knockbackCount <= 0)
         {
@@ -104,19 +89,19 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-1f, 1f, 1f);
 
         //bullet fire
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetButtonDown("Fire1"))
         {
             anim.SetBool("OnionBombo", true);
             Instantiate(bullet, firePoint.position, firePoint.rotation);
             shotDelayCount = shotDelay;
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetButtonUp("Fire1"))
         {
             anim.SetBool("OnionBombo", false);
         }
 
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetButton("Fire1"))
         {
             shotDelayCount -= Time.deltaTime;
 
@@ -128,15 +113,15 @@ public class PlayerController : MonoBehaviour
         }
 
         //defend
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetButtonDown("Fire2"))
         {
             anim.SetBool("Defend", true);
-            GetComponent<BoxCollider2D>().isTrigger = false;
+            GetComponent<BoxCollider2D>().isTrigger = true;
         }
-        if(Input.GetKeyUp(KeyCode.Q))
+        if(Input.GetButtonUp("Fire2"))
         {
             anim.SetBool("Defend", false);
-            GetComponent<BoxCollider2D>().isTrigger = true;
+            GetComponent<BoxCollider2D>().isTrigger = false;
         }
 
     }//void Update() END
