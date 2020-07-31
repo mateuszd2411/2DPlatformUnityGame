@@ -1165,6 +1165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startLevel: Level 1
   levelSelect: Level Select
+  playerLives: 5
+  playerHealth: 7
 --- !u!82 &2008027848
 AudioSource:
   m_ObjectHideFlags: 0

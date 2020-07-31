@@ -8,13 +8,31 @@ public class MainMenu : MonoBehaviour
 
     public string levelSelect;
 
+    public int playerLives;
+
+    public int playerHealth;
+
     public void NewGame()
-    {
+    {     
+        PlayerPrefs.SetInt("PlayerCurrentLives", playerLives);  //0 to reset
+
+        PlayerPrefs.SetInt("CurrentPlayerScore", 0);
+
+        PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
+        PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
+
         Application.LoadLevel(startLevel);
     }
 
     public void LevelSelect()
     {
+        PlayerPrefs.SetInt("PlayerCurrentLives", playerLives);
+
+        PlayerPrefs.SetInt("CurrentPlayerScore", 0);
+
+        PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
+        PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
+
         Application.LoadLevel(levelSelect);
     }
 
