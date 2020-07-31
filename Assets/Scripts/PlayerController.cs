@@ -31,10 +31,20 @@ public class PlayerController : MonoBehaviour
     public float knockbackCount; 
     public bool knockFromRight;
 
+    //for Ladder
+    public bool onLadder;
+    public float climbSpeed;
+    private float climbVelocity;
+    private float gravityStore;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        gravityStore = myRigidbody2D.gravityScale;
     }
 
     void FixedUpdate()
@@ -68,24 +78,24 @@ public class PlayerController : MonoBehaviour
 
         if(knockbackCount <= 0)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+            myRigidbody2D.velocity = new Vector2(moveVelocity, myRigidbody2D.velocity.y);
         }
         else
         {
             if (knockFromRight)
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-knockback, knockback);
+                myRigidbody2D.velocity = new Vector2(-knockback, knockback);
             if(!knockFromRight)
-                GetComponent<Rigidbody2D>().velocity = new Vector2(knockback, knockback);
+                myRigidbody2D.velocity = new Vector2(knockback, knockback);
             knockbackCount -= Time.deltaTime;
         }
         
 
-        anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+        anim.SetFloat("Speed", Mathf.Abs(myRigidbody2D.velocity.x));
 
-        if (GetComponent<Rigidbody2D>().velocity.x > 0)
+        if (myRigidbody2D.velocity.x > 0)
             transform.localScale = new Vector3(1f, 1f, 1f);
 
-        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+        else if (myRigidbody2D.velocity.x < 0)
             transform.localScale = new Vector3(-1f, 1f, 1f);
 
         //bullet fire
@@ -124,11 +134,24 @@ public class PlayerController : MonoBehaviour
             GetComponent<BoxCollider2D>().isTrigger = false;
         }
 
+
+        //ladder
+        if(onLadder)
+        {
+            myRigidbody2D.gravityScale = 0f;
+        }
+
+        if (!onLadder)
+        {
+            myRigidbody2D.gravityScale = gravityStore;
+        }
+
+
     }//void Update() END
 
     public void Jump()
     {
-        GetComponent<Rigidbody2D>().velocity =
-                new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+        myRigidbody2D.velocity =
+                new Vector2(myRigidbody2D.velocity.x, jumpHeight);
     }
 }
