@@ -31,11 +31,10 @@ public class PlayerController : MonoBehaviour
     public float knockbackCount; 
     public bool knockFromRight;
 
-    //for Ladder
-    public bool onLadder;
-    public float climbSpeed;
-    private float climbVelocity;
-    private float gravityStore;
+
+    //for Gayser
+    public bool onGayser;
+    private float gravityStoreForGayser;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +43,8 @@ public class PlayerController : MonoBehaviour
 
         myRigidbody2D = GetComponent<Rigidbody2D>();
 
-        gravityStore = myRigidbody2D.gravityScale;
+        gravityStoreForGayser = myRigidbody2D.gravityScale;
+
     }
 
     void FixedUpdate()
@@ -134,16 +134,15 @@ public class PlayerController : MonoBehaviour
             GetComponent<BoxCollider2D>().isTrigger = false;
         }
 
-
-        //ladder
-        if(onLadder)
+        //gayser
+        if (onGayser)
         {
             myRigidbody2D.gravityScale = 0f;
         }
 
-        if (!onLadder)
+        if (!onGayser)
         {
-            myRigidbody2D.gravityScale = gravityStore;
+            myRigidbody2D.gravityScale = gravityStoreForGayser;
         }
 
 

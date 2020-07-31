@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LadderZone : MonoBehaviour
+public class GayserZone : MonoBehaviour
 {
     private PlayerController thePlayer;
 
@@ -16,7 +16,7 @@ public class LadderZone : MonoBehaviour
     {
         if(other.name == "Player")
         {
-            thePlayer.onLadder = true;
+            thePlayer.onGayser = true;
         }
     }
 
@@ -24,7 +24,7 @@ public class LadderZone : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            thePlayer.onLadder = false;
+            thePlayer.onGayser = false;
         }
     }
 }

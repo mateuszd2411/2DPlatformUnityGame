@@ -4845,7 +4845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3253960936405721850}
   - component: {fileID: 3253960936405721849}
-  - component: {fileID: 3253960936405721851}
+  - component: {fileID: 2011616151}
   m_Layer: 0
   m_Name: Gayser
   m_TagString: Untagged
@@ -4883,7 +4883,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12452984, y: 1.1587758}
+  m_Offset: {x: -0.054415703, y: 3.6443396}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4894,9 +4894,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6943684, y: 4.4183855}
+  m_Size: {x: 1.8162365, y: 13.621418}
   m_EdgeRadius: 0
---- !u!114 &3253960936405721851
+--- !u!114 &2011616151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
