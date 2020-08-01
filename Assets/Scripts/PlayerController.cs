@@ -47,10 +47,12 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         myRigidbody2D = GetComponent<Rigidbody2D>();
-
+        gravityStoreForGayser = myRigidbody2D.gravityScale;
         gravityStore = myRigidbody2D.gravityScale;
 
-        gravityStoreForGayser = myRigidbody2D.gravityScale;
+        
+       
+        
 
     }
 
@@ -144,7 +146,10 @@ public class PlayerController : MonoBehaviour
         //gayser
         if (onGayser)
         {
-            myRigidbody2D.gravityScale = 0f;
+            myRigidbody2D.gravityScale = 0;
+            climbVelovity = 4 * climbSpeed * Input.GetAxisRaw("Jump");
+
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
         }
 
         if (!onGayser)
@@ -155,7 +160,7 @@ public class PlayerController : MonoBehaviour
         //ladder
         if (onLadder)
         {
-            myRigidbody2D.gravityScale = 0f;
+            myRigidbody2D.gravityScale = 0;
 
             climbVelovity = climbSpeed * Input.GetAxisRaw("Vertical");
 
