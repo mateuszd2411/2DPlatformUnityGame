@@ -294,7 +294,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 2
       minColor: {r: 0.9358405, g: 0.9811321, b: 0.29156283, a: 0.23529412}
-      maxColor: {r: 0.7047385, g: 0.9622642, b: 0.5803922, a: 0.11372549}
+      maxColor: {r: 0.5803922, g: 0.9607843, b: 0.5817522, a: 0.65882355}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4979,6 +4979,8 @@ MonoBehaviour:
   knockbackLenght: 0.2
   knockbackCount: 0
   knockFromRight: 0
+  onLadder: 0
+  climbSpeed: 5
   onGayser: 0
 --- !u!95 &336198865865634462
 Animator:
