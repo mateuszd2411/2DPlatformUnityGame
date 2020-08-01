@@ -15820,6 +15820,11 @@ PrefabInstance:
       propertyPath: orthographic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2973145061969369659, guid: c4c66add1fc63bc4998ef6f26998d066,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2973145061969369660, guid: c4c66add1fc63bc4998ef6f26998d066,
         type: 3}
       propertyPath: yOffset
@@ -16027,15 +16032,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 873043912, guid: 6cd68420fc7d6e2408dbdedbab3b6e11, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 873043912, guid: 6cd68420fc7d6e2408dbdedbab3b6e11, type: 3}
+      propertyPath: followOnLookAway
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4738800792300838706, guid: 6cd68420fc7d6e2408dbdedbab3b6e11,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.5
+      value: -45.83
       objectReference: {fileID: 0}
     - target: {fileID: 4738800792300838706, guid: 6cd68420fc7d6e2408dbdedbab3b6e11,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.52
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4738800792300838706, guid: 6cd68420fc7d6e2408dbdedbab3b6e11,
         type: 3}
