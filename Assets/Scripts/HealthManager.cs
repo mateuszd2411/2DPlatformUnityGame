@@ -17,6 +17,8 @@ public class HealthManager : MonoBehaviour
 
     private LifeManager lifeSystem;
 
+    private TimeManager theTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class HealthManager : MonoBehaviour
 
         //playerHealth = maxPlayerHealth;
         playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
+
+        theTime = FindObjectOfType<TimeManager>();
 
         levelManager = FindObjectOfType<LevelManager>();
 
@@ -42,6 +46,7 @@ public class HealthManager : MonoBehaviour
             levelManager.RespawnPlayer();
             lifeSystem.TakeLife();
             isDead = true;
+            theTime.ResetTime();
         }
         
         GetComponent<Text>().text = "" + playerHealth;
@@ -60,5 +65,9 @@ public class HealthManager : MonoBehaviour
         PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
     }
 
+    public void KillPlayer()
+    {
+        playerHealth = 0;
+    }
     
 }
