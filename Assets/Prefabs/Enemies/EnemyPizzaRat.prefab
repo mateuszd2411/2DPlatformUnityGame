@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 6711113875434641354}
   - component: {fileID: 5809947182295272858}
   - component: {fileID: 667404834}
+  - component: {fileID: 6266602692610733550}
   m_Layer: 14
   m_Name: Rat
   m_TagString: Enemy
@@ -125,11 +126,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2158252277315804307}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.81, y: -25.9, z: 0}
+  m_LocalPosition: {x: -42.8, y: -24.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1226669399}
   - {fileID: 155366562}
+  - {fileID: 2069272806259253274}
   m_Father: {fileID: 2158252276159905858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -425,3 +427,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6266602692610733550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2158252277315804307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c46532f9ec77a345b65fbf7f05f4c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRange: 10
+  enemyBullet: {fileID: 6768156034742828161, guid: 16e17f30dfa750d45881d6c88d849e29,
+    type: 3}
+  player: {fileID: 0}
+  launchPoint: {fileID: 2069272806259253274}
+  waitBetweenShots: 1
+--- !u!1 &9001195751352704912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069272806259253274}
+  m_Layer: 14
+  m_Name: LauchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2069272806259253274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001195751352704912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.84, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2158252277315804303}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
