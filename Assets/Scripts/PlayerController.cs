@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
     public float knockbackCount; 
     public bool knockFromRight;
 
+    //for Ladder
+    public bool onLadder;
+    public float climbSpeed;
+    private float climbVelovity;
+    private float gravityStore;
 
     //for Gayser
     public bool onGayser;
@@ -42,6 +47,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         myRigidbody2D = GetComponent<Rigidbody2D>();
+
+        gravityStore = myRigidbody2D.gravityScale;
 
         gravityStoreForGayser = myRigidbody2D.gravityScale;
 
@@ -143,6 +150,21 @@ public class PlayerController : MonoBehaviour
         if (!onGayser)
         {
             myRigidbody2D.gravityScale = gravityStoreForGayser;
+        }
+
+        //ladder
+        if (onLadder)
+        {
+            myRigidbody2D.gravityScale = 0f;
+
+            climbVelovity = climbSpeed * Input.GetAxisRaw("Vertical");
+
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
+        }
+
+        if (!onLadder)
+        {
+            myRigidbody2D.gravityScale = gravityStore;
         }
 
 
