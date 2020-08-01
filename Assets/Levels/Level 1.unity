@@ -1129,7 +1129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151364711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -112.24, y: -18.8, z: 25.96164}
+  m_LocalPosition: {x: -135.26, y: -18.8, z: 25.96164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1178766785}
@@ -2698,9 +2698,9 @@ GameObject:
   m_Component:
   - component: {fileID: 377329965}
   - component: {fileID: 377329964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MovingPlatform
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3225,9 +3225,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485789932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StartPoint
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3844,9 +3844,9 @@ GameObject:
   m_Component:
   - component: {fileID: 566870545}
   - component: {fileID: 566870546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground16x64medium
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4195,9 +4195,9 @@ GameObject:
   m_Component:
   - component: {fileID: 675758597}
   - component: {fileID: 675758598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5169,9 +5169,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781964022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EndPoint
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
