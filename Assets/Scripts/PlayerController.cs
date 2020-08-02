@@ -50,10 +50,6 @@ public class PlayerController : MonoBehaviour
         gravityStoreForGayser = myRigidbody2D.gravityScale;
         gravityStore = myRigidbody2D.gravityScale;
 
-        
-       
-        
-
     }
 
     void FixedUpdate()
@@ -193,7 +189,13 @@ public class PlayerController : MonoBehaviour
 
     public void FireBullet()
     {
+        anim.SetBool("OnionBombo", true);
         Instantiate(bullet, firePoint.position, firePoint.rotation);
+    }
+
+    public void FireBulletUp()
+    {
+        anim.SetBool("OnionBombo", false);
     }
 
     public void Defend()

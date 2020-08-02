@@ -6,10 +6,14 @@ public class TouchControls : MonoBehaviour
 {
     private PlayerController thePlayer;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
+
+        anim = GetComponent<Animator>();
     }
 
     public void LeftArrow()
@@ -40,6 +44,11 @@ public class TouchControls : MonoBehaviour
     public void Bullet()
     {
         thePlayer.FireBullet();
+    }
+
+    public void BulletUp()
+    {
+        thePlayer.FireBulletUp();
     }
 
     public void Jump()
