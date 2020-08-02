@@ -18,6 +18,8 @@ public class FlyEnemyMove : MonoBehaviour
 
     public bool followOnLookAway;
 
+    public AudioSource buzzySoundEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,8 +57,12 @@ public class FlyEnemyMove : MonoBehaviour
 
         if (playerInRange && facingAway)
         {
+            buzzySoundEffect.Stop();
             transform.position = Vector3.MoveTowards(transform.position,
             thePlayer.transform.position, moveSpeed * Time.deltaTime);
+        }else
+        {
+            buzzySoundEffect.Play();
         }
 
     }
