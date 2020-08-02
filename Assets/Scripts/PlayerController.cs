@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
             doubleJump = false;
 
         anim.SetBool("Grounded", grounded);
+#if UNITY_STANDALONE || UNITY_WEBPLAYER
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
@@ -83,7 +84,10 @@ public class PlayerController : MonoBehaviour
 
         //moveVelocity = 0f;
 
-        moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+        //moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+        Move(Input.GetAxisRaw("Horizontal"));
+
+#endif
 
         if(knockbackCount <= 0)
         {
@@ -107,11 +111,14 @@ public class PlayerController : MonoBehaviour
         else if (myRigidbody2D.velocity.x < 0)
             transform.localScale = new Vector3(-1f, 1f, 1f);
 
+#if UNITY_STANDALONE || UNITY_WEBPLAYER
+
         //bullet fire
         if(Input.GetButtonDown("Fire1"))
         {
             anim.SetBool("OnionBombo", true);
-            Instantiate(bullet, firePoint.position, firePoint.rotation);
+            //Instantiate(bullet, firePoint.position, firePoint.rotation);
+            FireBullet();
             shotDelayCount = shotDelay;
         }
 
@@ -127,22 +134,25 @@ public class PlayerController : MonoBehaviour
             if(shotDelayCount <= 0)
             {
                 shotDelayCount = shotDelay;
-                Instantiate(bullet, firePoint.position, firePoint.rotation);
+                //Instantiate(bullet, firePoint.position, firePoint.rotation);
+                FireBullet();
             }
         }
 
         //defend
         if(Input.GetButtonDown("Fire2"))
         {
-            anim.SetBool("Defend", true);
-            GetComponent<BoxCollider2D>().isTrigger = true;
+            Defend();
         }
         if(Input.GetButtonUp("Fire2"))
         {
-            anim.SetBool("Defend", false);
-            GetComponent<BoxCollider2D>().isTrigger = false;
+            ResetDefend();
+            //anim.SetBool("Defend", false);
+           // GetComponent<BoxCollider2D>().isTrigger = false;
         }
 
+
+#endif
         //gayser
         if (onGayser)
         {
@@ -175,10 +185,47 @@ public class PlayerController : MonoBehaviour
 
     }//void Update() END
 
+    //Move
+    public void Move(float moveInput)
+    {
+        moveVelocity = moveSpeed * moveInput;
+    }
+
+    public void FireBullet()
+    {
+        Instantiate(bullet, firePoint.position, firePoint.rotation);
+    }
+
+    public void Defend()
+    {
+        anim.SetBool("Defend", true);
+        GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+
+    public void ResetDefend()
+    {
+        anim.SetBool("Defend", false);
+        GetComponent<BoxCollider2D>().isTrigger = false;
+    }
+
     public void Jump()
     {
-        myRigidbody2D.velocity =
-                new Vector2(myRigidbody2D.velocity.x, jumpHeight);
+        //myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpHeight);
+
+        if (grounded)
+        {
+            //Jump();
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpHeight);
+        }
+
+        //for double jump
+        if (!doubleJump && !grounded)
+        {
+            //Jump();
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpHeight);
+            doubleJump = true;
+        }
+
     }
 
     //for Moving Platform
