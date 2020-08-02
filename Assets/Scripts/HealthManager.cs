@@ -9,7 +9,8 @@ public class HealthManager : MonoBehaviour
 
     public static int playerHealth;
 
-    Text text;
+    //Text text;
+    public Slider healthBar;
 
     private LevelManager levelManager;
 
@@ -22,7 +23,7 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text = GetComponent<Text>();
+        //text = GetComponent<Text>();
 
         //playerHealth = maxPlayerHealth;
         playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
