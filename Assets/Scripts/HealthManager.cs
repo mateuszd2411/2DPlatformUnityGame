@@ -25,6 +25,8 @@ public class HealthManager : MonoBehaviour
     {
         //text = GetComponent<Text>();
 
+        healthBar = GetComponent<Slider>();
+
         //playerHealth = maxPlayerHealth;
         playerHealth = PlayerPrefs.GetInt("PlayerCurrentHealth");
 
@@ -49,8 +51,12 @@ public class HealthManager : MonoBehaviour
             isDead = true;
             theTime.ResetTime();
         }
-        
-        GetComponent<Text>().text = "" + playerHealth;
+
+        if (playerHealth > maxPlayerHealth)
+            playerHealth = maxPlayerHealth;
+
+        //GetComponent<Text>().text = "" + playerHealth;
+        healthBar.value = playerHealth;
 
     }
 
