@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class LevelLoader : MonoBehaviour
 {
-    private bool playerInZone;
+    public bool playerInZone;
 
     public string levelToLoad;
+
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         playerInZone = false;
+
+        spriteRenderer = FindObjectOfType<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxisRaw("Horizontal") > 0.5f && playerInZone)
+        if(Input.GetAxisRaw("Vertical") > 0.5f && playerInZone)
         {
             Application.LoadLevel(levelToLoad);
         }
+    }
+
+    public void LoadLevel()
+    {
+        Application.LoadLevel(levelToLoad);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -28,6 +37,7 @@ public class LevelLoader : MonoBehaviour
         if(other.name == "Player")
         {
             playerInZone = true;
+            spriteRenderer.enabled = true;
         }
     }
 
@@ -36,6 +46,7 @@ public class LevelLoader : MonoBehaviour
         if (other.name == "Player")
         {
             playerInZone = false;
+            spriteRenderer.enabled = false;
         }
     }
 }

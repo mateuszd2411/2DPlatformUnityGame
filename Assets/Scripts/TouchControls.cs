@@ -8,12 +8,20 @@ public class TouchControls : MonoBehaviour
 
     private Animator anim;
 
+    private LevelLoader levelExit;
+
+    private PauseMenu thePauseMenu;
+
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerController>();
 
         anim = GetComponent<Animator>();
+
+        levelExit = FindObjectOfType<LevelLoader>();
+
+        thePauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     public void LeftArrow()
@@ -54,5 +62,15 @@ public class TouchControls : MonoBehaviour
     public void Jump()
     {
         thePlayer.Jump();
+
+        if(levelExit.playerInZone)
+        {
+            levelExit.LoadLevel();
+        }
+    }
+
+    public void Pause()
+    {
+        thePauseMenu.PauseUnpause();
     }
 }
