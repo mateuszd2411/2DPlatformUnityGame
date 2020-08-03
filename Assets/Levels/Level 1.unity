@@ -14372,6 +14372,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2744135023113382765, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023113382765, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023113382765, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023450709542, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023450709542, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023450709542, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135023540599978, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135024004559890, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135024004559890, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744135024004559890, guid: 273f93d72a7294d4a831e0f29547631e,
+        type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273f93d72a7294d4a831e0f29547631e, type: 3}
 --- !u!1001 &2917372588282924360
