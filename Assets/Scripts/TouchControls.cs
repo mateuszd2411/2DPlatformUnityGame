@@ -75,6 +75,11 @@ public class TouchControls : MonoBehaviour
         thePlayer.JumpOnGayser();
     }
 
+    public void UpOnLadderRope()
+    {
+        thePlayer.UpOnRope();
+    }
+
     public void DoubleJump()
     {
         thePlayer.DoubleJumpPlayer();

@@ -256,6 +256,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void UpOnRope()
+    {
+        if (onLadder)
+        {
+            myRigidbody2D.gravityScale = 0;
+
+            climbVelovity = climbSpeed * 0.5f;
+
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
+        }
+
+        if (!onLadder)
+        {
+            myRigidbody2D.gravityScale = gravityStore;
+        }
+    }
+
     //for Moving Platform
     private void OnCollisionEnter2D(Collision2D other)
     {
