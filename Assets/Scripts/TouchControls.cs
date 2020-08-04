@@ -69,6 +69,11 @@ public class TouchControls : MonoBehaviour
         }
     }
 
+    public void DoubleJump()
+    {
+        thePlayer.DoubleJumpPlayer();
+    }
+
     public void Pause()
     {
         thePauseMenu.PauseUnpause();

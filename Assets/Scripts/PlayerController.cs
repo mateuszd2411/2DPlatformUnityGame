@@ -210,6 +210,16 @@ public class PlayerController : MonoBehaviour
         GetComponent<BoxCollider2D>().isTrigger = false;
     }
 
+    public void DoubleJumpPlayer()
+    {
+        if (grounded)
+        {
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpHeight * 1.5f);
+            doubleJump = true;
+        }
+
+    }
+
     public void Jump()
     {
         //myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, jumpHeight);
