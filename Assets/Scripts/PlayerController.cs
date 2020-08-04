@@ -49,7 +49,6 @@ public class PlayerController : MonoBehaviour
         myRigidbody2D = GetComponent<Rigidbody2D>();
         gravityStoreForGayser = myRigidbody2D.gravityScale;
         gravityStore = myRigidbody2D.gravityScale;
-
     }
 
     void FixedUpdate()
@@ -148,7 +147,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-#endif
+
         //gayser
         if (onGayser)
         {
@@ -178,6 +177,7 @@ public class PlayerController : MonoBehaviour
             myRigidbody2D.gravityScale = gravityStore;
         }
 
+#endif
 
     }//void Update() END
 
@@ -238,6 +238,22 @@ public class PlayerController : MonoBehaviour
             doubleJump = true;
         }
 
+    }
+
+    public void JumpOnGayser()
+    {
+        if (onGayser)
+        {
+            myRigidbody2D.gravityScale = 2;
+            //climbVelovity = 4 * climbSpeed * Input.GetAxisRaw("Jump");
+
+            //myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
+        }
+
+        if (!onGayser)
+        {
+            myRigidbody2D.gravityScale = gravityStoreForGayser;
+        }
     }
 
     //for Moving Platform

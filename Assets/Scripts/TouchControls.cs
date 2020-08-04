@@ -67,6 +67,12 @@ public class TouchControls : MonoBehaviour
         {
             levelExit.LoadLevel();
         }
+
+    }
+
+    public void JumpOnGayser()
+    {
+        thePlayer.JumpOnGayser();
     }
 
     public void DoubleJump()
