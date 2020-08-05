@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour
 
     public int playerHealth;
 
+    public string level1Tag;
+
     public void NewGame()
     {     
         PlayerPrefs.SetInt("PlayerCurrentLives", playerLives);  //0 to reset
@@ -21,6 +23,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
         PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
 
+        PlayerPrefs.SetInt(level1Tag, 1);
         Application.LoadLevel(startLevel);
     }
 
@@ -33,6 +36,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("PlayerCurrentHealth", playerHealth);
         PlayerPrefs.SetInt("PlayerMaxHealth", playerHealth);
 
+        PlayerPrefs.SetInt(level1Tag, 1);
         Application.LoadLevel(levelSelect);
     }
 

@@ -1181,6 +1181,7 @@ MonoBehaviour:
   levelSelect: Level Select
   playerLives: 5
   playerHealth: 7
+  level1Tag: level1lock
 --- !u!82 &2008027848
 AudioSource:
   m_ObjectHideFlags: 0

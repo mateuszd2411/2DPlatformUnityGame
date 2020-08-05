@@ -8,6 +8,8 @@ public class LevelLoader : MonoBehaviour
 
     public string levelToLoad;
 
+    public string levelTag;
+
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
@@ -23,12 +25,15 @@ public class LevelLoader : MonoBehaviour
     {
         if(Input.GetAxisRaw("Jump") > 0.5f && playerInZone)
         {
-            Application.LoadLevel(levelToLoad);
+            //Application.LoadLevel(levelToLoad);
+            LoadLevel();
         }
     }
 
     public void LoadLevel()
     {
+        PlayerPrefs.SetInt(levelTag, 1);
+
         Application.LoadLevel(levelToLoad);
     }
 

@@ -21463,7 +21463,7 @@ PrefabInstance:
     - target: {fileID: 7716511868147475992, guid: d691d711be6659a4a8fd0b14cf8fe0c5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -135.26
+      value: -120.6
       objectReference: {fileID: 0}
     - target: {fileID: 7716511868147475992, guid: d691d711be6659a4a8fd0b14cf8fe0c5,
         type: 3}
@@ -21582,7 +21582,7 @@ PrefabInstance:
     - target: {fileID: 3178879557345713473, guid: 54ac63d2775ba2941945691868ebf903,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 249.42
+      value: -33.9
       objectReference: {fileID: 0}
     - target: {fileID: 3178879557345713473, guid: 54ac63d2775ba2941945691868ebf903,
         type: 3}
@@ -21628,6 +21628,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075715011730612389, guid: 54ac63d2775ba2941945691868ebf903,
+        type: 3}
+      propertyPath: levelTag
+      value: level2lock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075715011730612389, guid: 54ac63d2775ba2941945691868ebf903,
+        type: 3}
+      propertyPath: levelToLoad
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 8075715011730612393, guid: 54ac63d2775ba2941945691868ebf903,
         type: 3}
