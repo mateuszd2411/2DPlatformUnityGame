@@ -1059,7 +1059,7 @@ PrefabInstance:
     - target: {fileID: 2677416238149447085, guid: 7cd9ab42b487e7e45ad91cbde9703eb4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31.18137
+      value: -61.6
       objectReference: {fileID: 0}
     - target: {fileID: 2677416238149447085, guid: 7cd9ab42b487e7e45ad91cbde9703eb4,
         type: 3}
@@ -3127,7 +3127,7 @@ PrefabInstance:
     - target: {fileID: 7716511868147475992, guid: d691d711be6659a4a8fd0b14cf8fe0c5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.96164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7716511868147475992, guid: d691d711be6659a4a8fd0b14cf8fe0c5,
         type: 3}
@@ -3802,6 +3802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1924058421}
   - component: {fileID: 1924058422}
+  - component: {fileID: 1924058423}
   m_Layer: 0
   m_Name: Stalactite256big (1)
   m_TagString: Untagged
@@ -3874,6 +3875,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1924058423
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924058420}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 25.6, y: 13.2}
+    newSize: {x: 25.6, y: 13.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 25.6, y: 13.2}
+  m_EdgeRadius: 0
 --- !u!1 &1965628019
 GameObject:
   m_ObjectHideFlags: 0

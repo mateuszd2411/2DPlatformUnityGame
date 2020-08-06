@@ -244,10 +244,10 @@ public class PlayerController : MonoBehaviour
     {
         if (onGayser)
         {
-            myRigidbody2D.gravityScale = 2;
-            //climbVelovity = 4 * climbSpeed * Input.GetAxisRaw("Jump");
+            myRigidbody2D.gravityScale = 0;
+            climbVelovity = 4 * climbSpeed;
 
-            //myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
+            myRigidbody2D.velocity = new Vector2(myRigidbody2D.velocity.x, climbVelovity);
         }
 
         if (!onGayser)
