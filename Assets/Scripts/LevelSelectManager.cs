@@ -41,6 +41,8 @@ public class LevelSelectManager : MonoBehaviour
             }
         }
 
+        positionSelector = PlayerPrefs.GetInt("PlayerLevelSelectPosition");
+
         transform.position = locks[positionSelector].transform.position + new Vector3(0, distanceBellowLock, 0);
 
     }
@@ -87,6 +89,8 @@ public class LevelSelectManager : MonoBehaviour
         {
             if(levelUnlocked[positionSelector])
             {
+                PlayerPrefs.SetInt("PlayerLevelSelectPosition", positionSelector);
+
                 Application.LoadLevel(levelName[positionSelector]);
             }
         }
