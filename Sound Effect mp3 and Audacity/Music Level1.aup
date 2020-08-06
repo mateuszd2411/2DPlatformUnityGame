@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Music Level1_data" version="1.3.0" audacityversion="2.3.0" sel0="43.0724093817" sel1="43.0724093817" vpos="0" h="0.0000000000" zoom="3.2503405779" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf58.29.100"/>
+		<tag name="ALBUM" value="Sing in the Style of Kiss (Karaoke Version)"/>
+		<tag name="major_brand" value="dash"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="ARTIST" value="Karaoke Backtrax Library"/>
+		<tag name="compatible_brands" value="iso6mp41"/>
+		<tag name="TITLE" value="Firehouse (Originally Performed by Kiss) [Karaoke Version]"/>
+	</tags>
+	<wavetrack name="Karaoke Kiss  Firehouse" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2542268">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808581.au" len="175283" min="-0.716748" max="0.641293" rms="0.105611"/>
+				</waveblock>
+				<waveblock start="175283">
+					<simpleblockfile filename="e0808f4f.au" len="175283" min="-0.61706" max="0.602336" rms="0.114498"/>
+				</waveblock>
+				<waveblock start="350566">
+					<simpleblockfile filename="e0808eaa.au" len="262144" min="-0.768509" max="0.818222" rms="0.136132"/>
+				</waveblock>
+				<waveblock start="612710">
+					<simpleblockfile filename="e0808666.au" len="262144" min="-0.955371" max="0.984413" rms="0.168384"/>
+				</waveblock>
+				<waveblock start="874854">
+					<simpleblockfile filename="e0808383.au" len="262144" min="-0.97225" max="0.901942" rms="0.175223"/>
+				</waveblock>
+				<waveblock start="1136998">
+					<simpleblockfile filename="e0808a11.au" len="262144" min="-0.867622" max="0.900147" rms="0.16902"/>
+				</waveblock>
+				<waveblock start="1399142">
+					<simpleblockfile filename="e0808d3f.au" len="262144" min="-0.916853" max="0.872434" rms="0.139395"/>
+				</waveblock>
+				<waveblock start="1661286">
+					<simpleblockfile filename="e080815b.au" len="262144" min="-0.95207" max="0.902019" rms="0.155792"/>
+				</waveblock>
+				<waveblock start="1923430">
+					<simpleblockfile filename="e08085dc.au" len="262144" min="-0.946812" max="0.923278" rms="0.152061"/>
+				</waveblock>
+				<waveblock start="2185574">
+					<simpleblockfile filename="e0808f97.au" len="178347" min="-0.981469" max="0.965383" rms="0.218452"/>
+				</waveblock>
+				<waveblock start="2363921">
+					<simpleblockfile filename="e08081dc.au" len="178347" min="-0.997746" max="0.982498" rms="0.1646"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Karaoke Kiss  Firehouse" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2542268">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c50.au" len="175283" min="-0.358621" max="0.312565" rms="0.050818"/>
+				</waveblock>
+				<waveblock start="175283">
+					<simpleblockfile filename="e08083ee.au" len="175283" min="-0.355584" max="0.403517" rms="0.061802"/>
+				</waveblock>
+				<waveblock start="350566">
+					<simpleblockfile filename="e0808d04.au" len="262144" min="-0.779388" max="0.725219" rms="0.106456"/>
+				</waveblock>
+				<waveblock start="612710">
+					<simpleblockfile filename="e08087aa.au" len="262144" min="-0.985868" max="0.992131" rms="0.169336"/>
+				</waveblock>
+				<waveblock start="874854">
+					<simpleblockfile filename="e0808170.au" len="262144" min="-0.946384" max="0.937813" rms="0.170438"/>
+				</waveblock>
+				<waveblock start="1136998">
+					<simpleblockfile filename="e0808c8b.au" len="262144" min="-0.898907" max="0.93884" rms="0.162788"/>
+				</waveblock>
+				<waveblock start="1399142">
+					<simpleblockfile filename="e08082ff.au" len="262144" min="-0.925793" max="0.865194" rms="0.133939"/>
+				</waveblock>
+				<waveblock start="1661286">
+					<simpleblockfile filename="e08089ee.au" len="262144" min="-0.862494" max="0.951977" rms="0.150789"/>
+				</waveblock>
+				<waveblock start="1923430">
+					<simpleblockfile filename="e0808743.au" len="262144" min="-0.955776" max="0.904088" rms="0.149709"/>
+				</waveblock>
+				<waveblock start="2185574">
+					<simpleblockfile filename="e0808ce4.au" len="178347" min="-0.968504" max="0.967368" rms="0.200049"/>
+				</waveblock>
+				<waveblock start="2363921">
+					<simpleblockfile filename="e0808984.au" len="178347" min="-1.015337" max="0.975827" rms="0.159767"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

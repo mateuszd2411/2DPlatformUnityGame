@@ -1530,6 +1530,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 45450829}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &996810454 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1344378610, guid: 54ac63d2775ba2941945691868ebf903,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561373838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1079676185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,6 +2690,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1344378610, guid: 54ac63d2775ba2941945691868ebf903, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3178879557345713473, guid: 54ac63d2775ba2941945691868ebf903,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2799,10 +2809,20 @@ PrefabInstance:
       propertyPath: levelToLoad
       value: Level 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8075715011730612389, guid: 54ac63d2775ba2941945691868ebf903,
+        type: 3}
+      propertyPath: spriteJumpPress
+      value: 
+      objectReference: {fileID: 996810454}
     - target: {fileID: 8075715011730612393, guid: 54ac63d2775ba2941945691868ebf903,
         type: 3}
       propertyPath: m_Name
       value: MoveToNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075715011730612393, guid: 54ac63d2775ba2941945691868ebf903,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54ac63d2775ba2941945691868ebf903, type: 3}
