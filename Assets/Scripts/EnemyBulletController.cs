@@ -8,6 +8,8 @@ public class EnemyBulletController : MonoBehaviour
 
     public PlayerController player;
 
+    private HealthManager theHealth;
+
     //public GameObject enemyDeathEffect;
 
     public GameObject impactEffect;
@@ -21,13 +23,23 @@ public class EnemyBulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        theHealth = FindObjectOfType<HealthManager>();
+
         player = FindObjectOfType<PlayerController>();
 
-        if (player.transform.position.x < transform.position.x)
+        if (!theHealth.isDead)
         {
-            speed = -speed;
-            rotationSpeed = -rotationSpeed;
+            if (player.transform.position.x < transform.position.x)
+            {
+                speed = -speed;
+                rotationSpeed = -rotationSpeed;
+            }
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
 
     }
 
@@ -37,6 +49,7 @@ public class EnemyBulletController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
         GetComponent<Rigidbody2D>().angularVelocity = rotationSpeed;
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
