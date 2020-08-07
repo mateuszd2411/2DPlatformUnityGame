@@ -5098,5 +5098,5 @@ MonoBehaviour:
   player: {fileID: 0}
   impactEffect: {fileID: 2269346566748729513, guid: 1bfb5412f2badf04ebc1c855ab4a2e26,
     type: 3}
-  rotationSpeed: -180
+  rotationSpeed: 0
   damageToGive: 1
