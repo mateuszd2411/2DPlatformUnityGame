@@ -10,15 +10,16 @@ public class LevelLoader : MonoBehaviour
 
     public string levelTag;
 
-    public SpriteRenderer spriteJumpPress;
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         playerInZone = false;
-        spriteJumpPress.enabled = false;
 
-        spriteJumpPress = FindObjectOfType<SpriteRenderer>();
+        spriteRenderer = FindObjectOfType<SpriteRenderer>();
+
+        spriteRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -28,6 +29,14 @@ public class LevelLoader : MonoBehaviour
         {
             //Application.LoadLevel(levelToLoad);
             LoadLevel();
+        }
+
+        if(playerInZone)
+        {
+            spriteRenderer.enabled = true;
+        }else
+        {
+            spriteRenderer.enabled = false;
         }
     }
 
@@ -43,7 +52,7 @@ public class LevelLoader : MonoBehaviour
         if(other.name == "Player")
         {
             playerInZone = true;
-            spriteJumpPress.enabled = true;
+            
         }
     }
 
@@ -52,7 +61,7 @@ public class LevelLoader : MonoBehaviour
         if (other.name == "Player")
         {
             playerInZone = false;
-            spriteJumpPress.enabled = false;
+            
         }
     }
 }
