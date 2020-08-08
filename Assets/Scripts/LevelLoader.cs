@@ -10,16 +10,16 @@ public class LevelLoader : MonoBehaviour
 
     public string levelTag;
 
-    public SpriteRenderer spriteRenderer;
+   // public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         playerInZone = false;
 
-        spriteRenderer = FindObjectOfType<SpriteRenderer>();
+        //spriteRenderer = FindObjectOfType<SpriteRenderer>();
 
-        spriteRenderer.enabled = false;
+        //spriteRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -31,13 +31,13 @@ public class LevelLoader : MonoBehaviour
             LoadLevel();
         }
 
-        if(playerInZone)
+        /*if(playerInZone)
         {
             spriteRenderer.enabled = true;
         }else
         {
             spriteRenderer.enabled = false;
-        }
+        }*/
     }
 
     public void LoadLevel()

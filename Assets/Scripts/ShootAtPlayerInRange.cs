@@ -31,10 +31,6 @@ public class ShootAtPlayerInRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (!theHealth.isDead)
-        {
-
             Debug.DrawLine(new Vector3(transform.position.x - playerRange, transform.position.y, transform.position.z),
             new Vector3(transform.position.x + playerRange, transform.position.y, transform.position.z));
 
@@ -57,7 +53,5 @@ public class ShootAtPlayerInRange : MonoBehaviour
                 Instantiate(enemyBullet, launchPoint.position, launchPoint.rotation);
                 shotCounter = waitBetweenShots;
             }
-
-        }
     }
 }

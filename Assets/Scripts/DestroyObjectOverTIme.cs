@@ -17,10 +17,10 @@ public class DestroyObjectOverTIme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (theHealth.isDead)
+        /*if (theHealth.isDead)
         {
             Destroy(gameObject);
-        }
+        }*/
 
         lifeTime -= Time.deltaTime;
 

@@ -27,19 +27,11 @@ public class EnemyBulletController : MonoBehaviour
 
         player = FindObjectOfType<PlayerController>();
 
-        if (!theHealth.isDead)
-        {
             if (player.transform.position.x < transform.position.x)
             {
                 speed = -speed;
                 rotationSpeed = -rotationSpeed;
             }
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        
 
     }
 
