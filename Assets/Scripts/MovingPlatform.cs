@@ -35,7 +35,7 @@ public class MovingPlatform : MonoBehaviour
                 pointSelection = 0;
             }
 
-            //currentPoint = points[pointSelection];
+            currentPoint = points[pointSelection];
         }
     }
 }
