@@ -59,6 +59,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("Player position is: " + this.transform.position);
+
         if (grounded)
             doubleJump = false;
 
