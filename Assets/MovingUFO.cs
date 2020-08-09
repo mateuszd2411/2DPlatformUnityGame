@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingRacket : MonoBehaviour
+public class MovingUFO : MonoBehaviour
 {
     public GameObject platform;
 
@@ -14,9 +14,7 @@ public class MovingRacket : MonoBehaviour
 
     public int pointSelection;
 
-    public bool playerInRacket;
-
-    public AudioSource audioSource;
+    public bool playerInUFO;
 
     // Start is called before the first frame update
     void Start()
@@ -27,33 +25,32 @@ public class MovingRacket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(!playerInRacket)
+        if (playerInUFO)
         {
-            audioSource.enabled = false;
-        }
-
-        platform.transform.position = Vector3.MoveTowards(platform.transform.position,
+            platform.transform.position = Vector3.MoveTowards(platform.transform.position,
             currentPoint.position, Time.deltaTime * moveSpeed);
 
-        if (platform.transform.position == currentPoint.position)
-        {
-            pointSelection++;
-
-            if (pointSelection == points.Length)
+            if (platform.transform.position == currentPoint.position)
             {
-                pointSelection = 0;
-            }
+                pointSelection++;
 
-            //currentPoint = points[pointSelection];
+                if (pointSelection == points.Length)
+                {
+                    pointSelection = 0;
+                }
+
+                currentPoint = points[pointSelection];
+            }
         }
+ 
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "Player")
         {
-            playerInRacket = true;
+            playerInUFO = true;
         }
     }
 
@@ -61,7 +58,7 @@ public class MovingRacket : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            playerInRacket = false;
+            playerInUFO = false;
         }
     }
 }
