@@ -6366,7 +6366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730024998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 304.4, y: -21.3, z: 1.9485931}
+  m_LocalPosition: {x: 304.4, y: -21.3, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1965628020}
@@ -16339,12 +16339,12 @@ PrefabInstance:
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 284.26
+      value: 277.41
       objectReference: {fileID: 0}
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.32
+      value: -18.51
       objectReference: {fileID: 0}
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
@@ -19341,7 +19341,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.97, y: 5.7}
+    oldSize: {x: 5, y: 6.65}
     newSize: {x: 2.97, y: 5.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19363,7 +19363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInZone: 0
-  levelToLoad: Level 3 BOSS
+  levelToLoad: Level Select
   levelTag: level3lock
   spriteRenderer: {fileID: 7141429756871182507}
 --- !u!212 &5475903336712574086
@@ -19406,7 +19406,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d3e88f934e120149ac38afcf5d2b9e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc493d29beae0eb4f82f2b635884bab8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19425,8 +19425,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5475903336712574083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 290.9, y: -15.35, z: 0.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 288.08, y: -14.78, z: 0.46}
+  m_LocalScale: {x: 2, y: 1.8, z: 1}
   m_Children:
   - {fileID: 7141429756871182504}
   m_Father: {fileID: 0}
@@ -19502,8 +19502,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7141429756871182505}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.6, z: -6.0600004}
-  m_LocalScale: {x: 1.6733254, y: 1.6733254, z: 1.6733254}
+  m_LocalPosition: {x: 0, y: 0.86, z: -6.0600004}
+  m_LocalScale: {x: 1, y: 1, z: 1.6733254}
   m_Children: []
   m_Father: {fileID: 5475903336712574087}
   m_RootOrder: 0
@@ -19534,7 +19534,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7141429756871182505}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1c9ad3859b738b04490e955929ed8d95, type: 2}
   m_CullingMode: 0
