@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingRacket : MonoBehaviour
 {
     public GameObject platform;
 
@@ -17,7 +17,7 @@ public class MovingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentPoint = points[pointSelection];   
+        currentPoint = points[pointSelection];
     }
 
     // Update is called once per frame
@@ -26,11 +26,11 @@ public class MovingPlatform : MonoBehaviour
         platform.transform.position = Vector3.MoveTowards(platform.transform.position,
             currentPoint.position, Time.deltaTime * moveSpeed);
 
-        if(platform.transform.position == currentPoint.position)
+        if (platform.transform.position == currentPoint.position)
         {
             pointSelection++;
 
-            if(pointSelection == points.Length)
+            if (pointSelection == points.Length)
             {
                 pointSelection = 0;
             }

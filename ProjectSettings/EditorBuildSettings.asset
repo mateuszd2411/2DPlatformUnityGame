@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Levels/Level 2.unity
     guid: 566e9635ead48c14689877c0ca187a74
   - enabled: 1
-    path: Assets/Levels/OLD Level Select(Old).unity
-    guid: 1aa50691642e0d6439de62f2b31a0e1c
+    path: Assets/Levels/Level 3 BOSS.unity
+    guid: 8a2630580511cb1448377304735853b1
   - enabled: 1
     path: Assets/Levels/Level Select.unity
     guid: b3d37a0189e84ea409b7f667a17d1ee4
