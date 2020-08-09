@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953745022275048432}
   - component: {fileID: 3930194184233950850}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CoinPiesel$200
   m_TagString: Untagged
   m_Icon: {fileID: 0}

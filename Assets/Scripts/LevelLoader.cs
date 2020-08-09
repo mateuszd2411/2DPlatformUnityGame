@@ -31,14 +31,14 @@ public class LevelLoader : MonoBehaviour
             LoadLevel();
         }
 
-        if (playerInZone)
+        /*if (playerInZone)
         {
             spriteRenderer.enabled = true;
         }
         else
         {
             spriteRenderer.enabled = false;
-        }
+        }*/
     }
 
     public void LoadLevel()
@@ -53,7 +53,8 @@ public class LevelLoader : MonoBehaviour
         if(other.name == "Player")
         {
             playerInZone = true;
-            
+            spriteRenderer.enabled = true;
+
         }
     }
 
@@ -62,7 +63,8 @@ public class LevelLoader : MonoBehaviour
         if (other.name == "Player")
         {
             playerInZone = false;
-            
+            spriteRenderer.enabled = false;
+
         }
     }
 }

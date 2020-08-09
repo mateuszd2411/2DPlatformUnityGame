@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2077625931544023698}
   - component: {fileID: 5821665957736910326}
   - component: {fileID: 2917372588503254511}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2917372589924636434}
   - component: {fileID: 2917372589924636433}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: AddHealthCarrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
