@@ -3227,6 +3227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Add life Hay (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1239442869402107254, guid: a0cc44809c828d74d85fe6c9144334ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3796,6 +3801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Add life Hay (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239442869402107254, guid: a0cc44809c828d74d85fe6c9144334ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
         type: 3}
@@ -8233,81 +8243,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec488931bd41aab47b711d59044f40e1, type: 3}
---- !u!1001 &996589648
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2035021666}
-    m_Modifications:
-    - target: {fileID: 1239442869402107254, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_Name
-      value: Add life Hay
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -94.18125
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -31.431993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.663473
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a0cc44809c828d74d85fe6c9144334ca, type: 3}
---- !u!4 &996589649 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 996589648}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1001141013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12206,7 +12141,7 @@ PrefabInstance:
     - target: {fileID: 4059568466411912410, guid: ee859c58bac897d49a18e7051704d2ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.14
+      value: -7.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee859c58bac897d49a18e7051704d2ad, type: 3}
@@ -14506,6 +14441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Add life Hay (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1239442869402107254, guid: a0cc44809c828d74d85fe6c9144334ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8951764968245781491, guid: a0cc44809c828d74d85fe6c9144334ca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16339,12 +16279,12 @@ PrefabInstance:
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 277.41
+      value: -38.4
       objectReference: {fileID: 0}
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.51
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
@@ -17588,7 +17528,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 996589649}
   - {fileID: 423997752}
   - {fileID: 486779595}
   - {fileID: 1648009829}
