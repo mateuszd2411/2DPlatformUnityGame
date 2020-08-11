@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Levels/Level 3 BOSS.unity
     guid: 8a2630580511cb1448377304735853b1
   - enabled: 1
+    path: Assets/Levels/Level 4 Fall.unity
+    guid: 27e98a53c4ffd054e84ec83ea24f1d39
+  - enabled: 1
+    path: Assets/Levels/Level 5 BOSS.unity
+    guid: 66e0b93ef7ccb1d468f1f6de4930e63e
+  - enabled: 1
     path: Assets/Levels/Level Select.unity
     guid: b3d37a0189e84ea409b7f667a17d1ee4
   m_configObjects: {}
