@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3b0e08a9d35bc0e45a5aa4632e69aaa6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.63, y: 1.26}
@@ -161,7 +161,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!114 &8404487782811857253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,9 +320,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79d1c98856d0b24e859e1583a2418d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -20
+  speed: -5
   player: {fileID: 0}
   impactEffect: {fileID: 2269346566748729513, guid: 1bfb5412f2badf04ebc1c855ab4a2e26,
     type: 3}
-  rotationSpeed: 1
+  rotationSpeed: 0
   damageToGive: 1
