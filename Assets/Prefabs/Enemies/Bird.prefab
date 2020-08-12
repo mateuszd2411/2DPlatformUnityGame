@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 6
-  deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
+  deathEffect: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
     type: 3}
   pointsOnDeath: 50
 --- !u!114 &7140384101411505921

@@ -53,7 +53,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2204871064099765990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.44, y: 0, z: -0.94}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 4
-  deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
+  deathEffect: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
     type: 3}
   pointsOnDeath: 50
 --- !u!114 &4520199643528736017
@@ -337,7 +337,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7b7622013cbd7d843be8f594a9e89a1d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 881770b70cf44734eb4a1b62a66d1fb6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

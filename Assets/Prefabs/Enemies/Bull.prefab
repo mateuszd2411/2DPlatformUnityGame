@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3635664289400818350}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.7, y: 0.64, z: -7.25}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
@@ -72,9 +72,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0efa6938c1ad14a479bc032450c7cbae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8edab9dbe3705064390583f0ca69fb3b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.49
+  m_Volume: 0.413
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 8
-  deathEffect: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
+  deathEffect: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
     type: 3}
   pointsOnDeath: 50
 --- !u!114 &1321743019222473049
@@ -466,7 +466,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3d5a782587daaf94f9aec15e949c7b08, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e2cb266a362dc774193f52339c2e57cc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 3635664290595125493}
   playerInRange: 0
-  playerRange: 15
+  playerRange: 20
   palyerLayer:
     serializedVersion: 2
     m_Bits: 256
