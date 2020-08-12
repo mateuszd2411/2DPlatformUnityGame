@@ -24,7 +24,7 @@ public class PlaySound : MonoBehaviour
     {
         playerInRange = Physics2D.OverlapCircle(transform.position, playerRange, palyerLayer);
 
-        if (!playerInRange)
+        if (playerInRange)
         {
             audioSource.Play();
         }

@@ -15314,6 +15314,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7108774598511903883, guid: acc0257f277c0bf4d9b412f164616b53,
+        type: 3}
+      propertyPath: deathPaticle
+      value: 
+      objectReference: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
+        type: 3}
     - target: {fileID: 7108774598511903893, guid: acc0257f277c0bf4d9b412f164616b53,
         type: 3}
       propertyPath: m_Name
@@ -19046,6 +19052,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3083794494139168202, guid: 39d2d8e193f5c734d98704bb6fa20798,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39d2d8e193f5c734d98704bb6fa20798, type: 3}
 --- !u!1001 &1069736369132227381
@@ -19447,6 +19459,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3551087702582520566, guid: 98ccd003355bfaa4d8419b57580fd9e7,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
+        type: 3}
     - target: {fileID: 4220475393005308114, guid: 98ccd003355bfaa4d8419b57580fd9e7,
         type: 3}
       propertyPath: m_Enabled
@@ -19638,6 +19656,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 782352152}
     m_Modifications:
+    - target: {fileID: 934523761741597553, guid: 88f270a6190323e43963a3e11607a6f4,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
+        type: 3}
     - target: {fileID: 2402698888874443478, guid: 88f270a6190323e43963a3e11607a6f4,
         type: 3}
       propertyPath: m_Name
