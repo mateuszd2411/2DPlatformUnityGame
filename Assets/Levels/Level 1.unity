@@ -23887,6 +23887,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d5db08baa7eff5e46b9a5d7712671bfa, type: 2}
+    - target: {fileID: 7137678105882468030, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1376215335630455065, guid: b44f8d0314837844183922f0aa10fe02,
+        type: 3}
+    - target: {fileID: 7137678105882468030, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
+        type: 3}
+      propertyPath: bullet2
+      value: 
+      objectReference: {fileID: 3958299777347910181, guid: 3976c2ac24037ec48af37acb25d8d320,
+        type: 3}
     - target: {fileID: 7827392845787886145, guid: 7c63a9b7b485c8f4395ee4b176ee6237,
         type: 3}
       propertyPath: m_LocalPosition.x

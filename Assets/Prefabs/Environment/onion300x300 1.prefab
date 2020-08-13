@@ -4831,7 +4831,7 @@ GameObject:
   - component: {fileID: 2297797225387024204}
   - component: {fileID: -8215000207082302315}
   m_Layer: 11
-  m_Name: onion300x300
+  m_Name: onion300x300 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

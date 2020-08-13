@@ -52457,7 +52457,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   firePoint: {fileID: 2653109786364504520}
-  bullet: {fileID: 1376215335630455065, guid: 1252da894f4d5914eb497c8d2baf700c, type: 3}
+  bullet: {fileID: 1376215335630455065, guid: b44f8d0314837844183922f0aa10fe02, type: 3}
+  bullet2: {fileID: 3958299777347910181, guid: 3976c2ac24037ec48af37acb25d8d320, type: 3}
   shotDelay: 0.2
   knockback: 10
   knockbackLenght: 0.2

@@ -64,6 +64,16 @@ public class TouchControls : MonoBehaviour
         thePlayer.FireBulletUp();
     }
 
+    public void Bullet2()
+    {
+        thePlayer.FireBullet2();
+    }
+
+    public void Bullet2Up()
+    {
+        thePlayer.FireBulletUp2();
+    }
+
     public void Jump()
     {
         thePlayer.Jump();

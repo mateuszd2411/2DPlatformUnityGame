@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
+    public GameObject bullet2;
+
     public float shotDelay;
     private float shotDelayCount;
 
@@ -136,8 +138,35 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //bullet fire2
+        if (Input.GetButtonDown("Fire3"))
+        {
+            anim.SetBool("OnionBombo", true);
+            //Instantiate(bullet, firePoint.position, firePoint.rotation);
+            FireBullet2();
+            shotDelayCount = shotDelay;
+        }
+
+        if (Input.GetButtonUp("Fire3"))
+        {
+            anim.SetBool("OnionBombo", false);
+        }
+
+        if (Input.GetButton("Fire3"))
+        {
+            shotDelayCount -= Time.deltaTime;
+
+            if (shotDelayCount <= 0)
+            {
+                shotDelayCount = shotDelay;
+                //Instantiate(bullet, firePoint.position, firePoint.rotation);
+                FireBullet2();
+            }
+        }
+
+
         //defend
-        if(Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2"))
         {
             Defend();
         }
@@ -189,6 +218,7 @@ public class PlayerController : MonoBehaviour
         moveVelocity = moveSpeed * moveInput;
     }
 
+    //bullet1
     public void FireBullet()
     {
         anim.SetBool("OnionBombo", true);
@@ -196,6 +226,18 @@ public class PlayerController : MonoBehaviour
     }
 
     public void FireBulletUp()
+    {
+        anim.SetBool("OnionBombo", false);
+    }
+
+    //bullet2
+    public void FireBullet2()
+    {
+        anim.SetBool("OnionBombo", true);
+        Instantiate(bullet2, firePoint.position, firePoint.rotation);
+    }
+
+    public void FireBulletUp2()
     {
         anim.SetBool("OnionBombo", false);
     }
