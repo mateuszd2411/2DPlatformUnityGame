@@ -18537,6 +18537,7 @@ MonoBehaviour:
     m_Bits: 512
   firePoint: {fileID: 1026413365320935090}
   bullet: {fileID: 1376215335630455065, guid: 1252da894f4d5914eb497c8d2baf700c, type: 3}
+  bullet2: {fileID: 0}
   shotDelay: 0.2
   knockback: 2
   knockbackLenght: 0.2
@@ -23340,7 +23341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInZoneNow: 0
-  levelToLoadNow: Level 5 BOSS
+  levelToLoadNow: Level Select
   levelTagNow: level5lock
 --- !u!4 &5475903335986208724
 Transform:
