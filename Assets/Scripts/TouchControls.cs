@@ -31,6 +31,11 @@ public class TouchControls : MonoBehaviour
 
     public void RightArrow()
     {
+        if (levelExit.playerInZone)
+        {
+            levelExit.LoadLevel();
+        }
+
         thePlayer.Move(1);
     }
 
@@ -62,11 +67,6 @@ public class TouchControls : MonoBehaviour
     public void Jump()
     {
         thePlayer.Jump();
-
-        if(levelExit.playerInZone)
-        {
-            levelExit.LoadLevel();
-        }
 
     }
 
