@@ -6,6 +6,8 @@ public class BossHealthManager : MonoBehaviour
 {
     public int enemyHealth;
 
+    public int minEnemyHealth;
+
     public GameObject deathEffect;
 
     public int pointsOnDeath;
@@ -34,10 +36,10 @@ public class BossHealthManager : MonoBehaviour
                 GameObject clone2 = Instantiate(bossPrefab, new Vector3(transform.position.x - 3f, transform.position.y, transform.position.z), transform.rotation) as GameObject;
 
                 clone1.transform.localScale = new Vector3(transform.localScale.y * 0.6f, transform.localScale.y * 0.6f, transform.localScale.z);
-                clone1.GetComponent<BossHealthManager>().enemyHealth = 3;
+                clone1.GetComponent<BossHealthManager>().enemyHealth = minEnemyHealth;
 
                 clone2.transform.localScale = new Vector3(transform.localScale.y * 0.6f, transform.localScale.y * 0.6f, transform.localScale.z);
-                clone2.GetComponent<BossHealthManager>().enemyHealth = 3;
+                clone2.GetComponent<BossHealthManager>().enemyHealth = minEnemyHealth;
             }
 
 
