@@ -45,13 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckpoit: {fileID: 0}
-  deathPaticle: {fileID: 121804929177000987, guid: a152f76c86bf8c24e97cfcc8034d0372,
+  deathPaticle: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
     type: 3}
   respawnPaticle: {fileID: 5918283184528043952, guid: 2bce8c18adbad734fb36779d7d1379ec,
     type: 3}
   pointPenaltyOnDeath: 50
   respawnDelay: 1
   healthManager: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  audioSource: {fileID: 7108774598511903880}
 --- !u!82 &7108774598511903880
 AudioSource:
   m_ObjectHideFlags: 0

@@ -22,19 +22,38 @@ public class LevelManager : MonoBehaviour
 
     public HealthManager healthManager;
 
+    public PauseMenu pauseMenu;
+
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
+
         player = FindObjectOfType<PlayerController>();
 
         camera = FindObjectOfType<CameraController>();
 
         healthManager = FindObjectOfType<HealthManager>();
+
+        pauseMenu = FindObjectOfType<PauseMenu>();
+
+        audioSource = FindObjectOfType<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (!pauseMenu.isPaused)
+        {
+            audioSource.mute = false;
+        }
+
+        else
+        {
+            audioSource.mute = true;
+        }
 
     }
 
@@ -47,7 +66,7 @@ public class LevelManager : MonoBehaviour
     public IEnumerator RespawnPlayerCo()
     {
         //Stop background music
-        GetComponent<AudioSource>().Stop();
+        //GetComponent<AudioSource>().Stop();
 
         //paritcle
         Instantiate(deathPaticle, player.transform.position, player.transform.rotation);
@@ -68,7 +87,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(respawnDelay);
 
         //Start background music
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
 
         player.transform.position = currentCheckpoit.transform.position;
         player.knockbackCount = 0;
