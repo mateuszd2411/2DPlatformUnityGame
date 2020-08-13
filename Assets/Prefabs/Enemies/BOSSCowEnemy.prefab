@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 3571747666280247246}
   - component: {fileID: 7450665063152652290}
   - component: {fileID: 3198332638530582906}
-  - component: {fileID: 3198332638530582909}
   - component: {fileID: 3198332638530582848}
   - component: {fileID: 1307428293347017682}
+  - component: {fileID: 1519381761}
   m_Layer: 14
   m_Name: BOSSCowEnemy
   m_TagString: Boss
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 84c631154e0a631418bbe35780927af4, type: 3}
-  m_Color: {r: 0.40249437, g: 1, b: 0.3537736, a: 1}
+  m_Color: {r: 1, g: 0.1283899, b: 0, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,7 +130,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.48236978, y: -1.1262461}
+  m_Offset: {x: -0.4823699, y: -0.62970746}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -141,7 +141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.906451, y: 2.2108405}
+  m_Size: {x: 5.906451, y: 3.2039177}
   m_EdgeRadius: 0
 --- !u!70 &3571747666074231020
 CapsuleCollider2D:
@@ -156,8 +156,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.39147067, y: -0.61627316}
-  m_Size: {x: 2.8260903, y: 3.9461083}
+  m_Offset: {x: 0.03, y: -1.38}
+  m_Size: {x: 2.45, y: 0.05}
   m_Direction: 0
 --- !u!114 &7003222465049323638
 MonoBehaviour:
@@ -304,25 +304,6 @@ MonoBehaviour:
   palyerLayer:
     serializedVersion: 2
     m_Bits: 256
---- !u!95 &3198332638530582909
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3198332638530582911}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d4247847a4f60e64788577708f2b7285, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &3198332638530582848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28103dbf59324943b23a3537caa9ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 10
+  enemyHealth: 20
   deathEffect: {fileID: 8487702824815844542, guid: 7c7c5a68647b1e343b79be41eadb14a7,
     type: 3}
   pointsOnDeath: 10
@@ -361,6 +342,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   edgeCheck: {fileID: 3571747666707845454}
+--- !u!95 &1519381761
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198332638530582911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd52584de11a0f6419299ae9c5720827, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3571747666707845453
 GameObject:
   m_ObjectHideFlags: 0
