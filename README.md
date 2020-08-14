@@ -1,8 +1,10 @@
 # 2DPlatformUnityGame
 
-<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1DU8NkM1IL2SU5bLGijahJW61Cr3haUEp/view?usp=sharing">Link Download .apk for Android</a>
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1nmx4EDqKF1TZviphy5tuYviqvhmzXdZP/view?usp=sharing">Link Download .apk for Android</a>
 
-https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/yt1.png?raw=true
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1qRa6QO3pqGrrMfe_ZFKka_gcAFQivgkG/view?usp=sharing">Link Download .exe for PC</a>
+
+https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be
 
 [![Watch the video](https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/yt1.png?raw=true)](https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be)
 
