@@ -5094,6 +5094,7 @@ MonoBehaviour:
     m_Bits: 512
   firePoint: {fileID: 2653109786268390095}
   bullet: {fileID: 1376215335630455065, guid: 1252da894f4d5914eb497c8d2baf700c, type: 3}
+  bullet2: {fileID: 0}
   shotDelay: 0.2
   knockback: 10
   knockbackLenght: 0.2
@@ -5157,7 +5158,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 835ef0d1e8466584d8fad75bb106cbdc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00e5e42bb3fadd244bcd529edd241555, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

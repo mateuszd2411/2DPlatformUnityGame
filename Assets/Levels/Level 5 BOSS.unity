@@ -1215,7 +1215,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 59e5ec02183d0b3488f21912ce0e1ed4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8b6bb9cb9235bc34e873b6eb2adb8439, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1.1
@@ -6752,16 +6752,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3198332638530582848, guid: ce5c6d14ac7a6f641bd3f954836d3412,
-        type: 3}
-      propertyPath: enemyHealth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198332638530582848, guid: ce5c6d14ac7a6f641bd3f954836d3412,
-        type: 3}
-      propertyPath: minEnemyHealth
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3198332638530582883, guid: ce5c6d14ac7a6f641bd3f954836d3412,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6821,11 +6811,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BOSSCowEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198332638530582911, guid: ce5c6d14ac7a6f641bd3f954836d3412,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5c6d14ac7a6f641bd3f954836d3412, type: 3}
@@ -12548,7 +12533,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 835ef0d1e8466584d8fad75bb106cbdc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 00e5e42bb3fadd244bcd529edd241555, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

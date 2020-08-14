@@ -1,12 +1,12 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
-<project xmlns="http://audacity.sourceforge.net/xml/" projname="Music Level2_data" version="1.3.0" audacityversion="2.3.0" sel0="59.6949942857" sel1="59.6949942857" vpos="0" h="57.2825417143" zoom="227.1547248183" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Music Level2_data" version="1.3.0" audacityversion="2.3.0" sel0="37.7540022857" sel1="37.7540022857" vpos="0" h="26.0967497143" zoom="56.7886812046" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
 	<tags>
 		<tag name="Software" value="Lavf58.29.100"/>
 	</tags>
 	<wavetrack name="Kiss (Demo) - God Of Thunder - Instrumental Version" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="3012960">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1912776">
 				<waveblock start="0">
 					<simpleblockfile filename="e08084b9.au" len="233103" min="-0.892005" max="0.872499" rms="0.22834"/>
 				</waveblock>
@@ -26,22 +26,10 @@
 					<simpleblockfile filename="e0808783.au" len="262144" min="-0.904196" max="0.884273" rms="0.221697"/>
 				</waveblock>
 				<waveblock start="1543823">
-					<simpleblockfile filename="e080867f.au" len="262144" min="-0.904141" max="0.915277" rms="0.210375"/>
+					<simpleblockfile filename="e0808a36.au" len="184476" min="-0.882813" max="0.858015" rms="0.206946"/>
 				</waveblock>
-				<waveblock start="1805967">
-					<simpleblockfile filename="e08085da.au" len="262144" min="-0.843903" max="0.850585" rms="0.208259"/>
-				</waveblock>
-				<waveblock start="2068111">
-					<simpleblockfile filename="e08082b0.au" len="262144" min="-0.898409" max="0.832205" rms="0.20796"/>
-				</waveblock>
-				<waveblock start="2330255">
-					<simpleblockfile filename="e080848f.au" len="262144" min="-0.864833" max="0.857094" rms="0.199796"/>
-				</waveblock>
-				<waveblock start="2592399">
-					<simpleblockfile filename="e08081a2.au" len="262144" min="-0.900004" max="0.841475" rms="0.203134"/>
-				</waveblock>
-				<waveblock start="2854543">
-					<simpleblockfile filename="e08084d0.au" len="158417" min="-0.890148" max="0.755001" rms="0.17586"/>
+				<waveblock start="1728299">
+					<simpleblockfile filename="e0808677.au" len="184477" min="-0.904141" max="0.915277" rms="0.214978"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>
@@ -49,7 +37,7 @@
 	</wavetrack>
 	<wavetrack name="Kiss (Demo) - God Of Thunder - Instrumental Version" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="48000" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="3012960">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1912776">
 				<waveblock start="0">
 					<simpleblockfile filename="e0808430.au" len="233103" min="-0.860774" max="0.771505" rms="0.195033"/>
 				</waveblock>
@@ -69,22 +57,10 @@
 					<simpleblockfile filename="e0808da5.au" len="262144" min="-0.786112" max="0.79899" rms="0.168743"/>
 				</waveblock>
 				<waveblock start="1543823">
-					<simpleblockfile filename="e0808f02.au" len="262144" min="-0.724913" max="0.812362" rms="0.156559"/>
+					<simpleblockfile filename="e0808a74.au" len="184476" min="-0.724913" max="0.812362" rms="0.153737"/>
 				</waveblock>
-				<waveblock start="1805967">
-					<simpleblockfile filename="e0808b6c.au" len="262144" min="-0.816261" max="0.727478" rms="0.15713"/>
-				</waveblock>
-				<waveblock start="2068111">
-					<simpleblockfile filename="e0808a21.au" len="262144" min="-0.780977" max="0.749608" rms="0.153694"/>
-				</waveblock>
-				<waveblock start="2330255">
-					<simpleblockfile filename="e080819a.au" len="262144" min="-0.7836" max="0.696403" rms="0.149384"/>
-				</waveblock>
-				<waveblock start="2592399">
-					<simpleblockfile filename="e0808fa2.au" len="262144" min="-0.687911" max="0.735685" rms="0.154013"/>
-				</waveblock>
-				<waveblock start="2854543">
-					<simpleblockfile filename="e0808c06.au" len="158417" min="-0.737221" max="0.673131" rms="0.131467"/>
+				<waveblock start="1728299">
+					<simpleblockfile filename="e08089b8.au" len="184477" min="-0.816261" max="0.727478" rms="0.159916"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>
