@@ -6,9 +6,12 @@
 
 https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be
 
+
 [![Watch the video](https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/yt1.png?raw=true)](https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be)
 
 [![Watch the video](https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/yt2.png?raw=true)](https://www.youtube.com/watch?v=ECLrgVrAe-g&feature=youtu.be)
+
+[![Watch the video](https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/gif.gif)](https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be)
 
 [![Watch the video](https://github.com/mateuszd2411/2DPlatformUnityGame/blob/master/Screens/yt3.png?raw=true)](https://www.youtube.com/watch?v=4podjQzw73g&feature=youtu.be)
 
